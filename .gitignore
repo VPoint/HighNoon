@@ -17,6 +17,8 @@ local.properties
 .loadpath
 
 Library/
+ProjectSettings/
+Temp/
 
 # External tool builders
 .externalToolBuilders/
