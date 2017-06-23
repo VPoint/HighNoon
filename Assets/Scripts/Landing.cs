@@ -15,15 +15,15 @@ public class Landing : MonoBehaviour {
 	}
 	
 		
-	void play () {
+	public void Play () {
 		Application.LoadLevel ("Game");
 	}
 	
-	void goToSettings () {
+	public void GoToSettings () {
 		Application.LoadLevel ("Settings");
 	}
 	
-	void goToHelp () {
+	public void GoToHelp () {
 		Application.LoadLevel ("Help");
 	}
 }

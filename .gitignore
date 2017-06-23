@@ -145,6 +145,10 @@ csx
 AppPackages/
 
 # Others
+*.sln
+*.csproj
+*.exe
+*_Data/
 sql/
 *.Cache
 ClientBin/
