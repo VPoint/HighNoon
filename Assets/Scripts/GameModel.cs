@@ -38,6 +38,8 @@ public class GameModel : MonoBehaviour {
 				currState = State.NONE;
 			break;
 		}
+		
+		Debug.Log(currState);
 	}
 	
 	public void PerformActionOnSelected(Item item){
@@ -68,11 +70,29 @@ public class GameModel : MonoBehaviour {
 		if(o1.canBeCombined && o2.canBeCombined){
 			
 		} else {
-			// show dialog with error
+			// show dialog with "These items can not be combined"
+			Debug.Log("show dialog with error");
 		}
 	}
 	
 	private void AddToInventory(Item item){
+		bool itemAdded = false;
+		for(int pos = 0; pos < 3; pos++){
+			if(inventory[pos] == null){
+				inventory[pos] = item;
+				itemAdded = true;
+			}
+		}
 		
+		if(!itemAdded) { 
+			// display inventory full message
+		}
+	}
+	
+	private void Zoom(string str){
+		// this will be hard-coded for the time being
+		//switch(str){
+			
+		//}
 	}
 }
