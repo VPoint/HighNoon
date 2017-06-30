@@ -10,5 +10,4 @@ Build/*
 *.pidb
 *.userprefs
 *.csproj
-*.meta
 *.sln
