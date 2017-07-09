@@ -28,10 +28,10 @@ public class QuestManager : MonoBehaviour
 
     public void ShowQuestText(string questText)
     {
+		//Debug.Log("Show Quest Text");
         theDM.dialogLines = new string[1];
         theDM.dialogLines[0] = questText;
 
         theDM.currentLine = 0;
-        theDM.ShowDialog();
     }
 }

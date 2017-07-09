@@ -88,11 +88,4 @@ public class GameModel : MonoBehaviour {
 			// display inventory full message
 		}
 	}
-	
-	private void Zoom(string str){
-		// this will be hard-coded for the time being
-		//switch(str){
-			
-		//}
-	}
 }
