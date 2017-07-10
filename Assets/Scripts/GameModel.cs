@@ -10,14 +10,11 @@ public class GameModel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		// set timer
-		// reset score to zero
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		// decrement timer
-		// update score
+		
 	}
 
 	public void SetState(int i){

@@ -8,7 +8,7 @@ public class QuestItem : MonoBehaviour
     public int questNumber;
 
     private QuestManager theQM;
-	private dialogHolder theDH;
+	private DialogHolder theDH;
 	private DialogueManager theDM;
 
     public string itemName;
@@ -21,7 +21,7 @@ public class QuestItem : MonoBehaviour
     void Start()
     {
         theQM = FindObjectOfType<QuestManager>();
-		theDH = FindObjectOfType<dialogHolder>();
+		theDH = FindObjectOfType<DialogHolder>();
 		theDM = FindObjectOfType<DialogueManager>();
     }
 
