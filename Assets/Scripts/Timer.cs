@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour {
 	 public float timeRemaining = 60f;
+	 public bool active = true;
 	 
 	 void Start(){
-		 InvokeRepeating("decreaseTimeRemaining", 1.0f, 1.0f);
+		InvokeRepeating("decreaseTimeRemaining", 1.0f, 1.0f);
 		 DontDestroyOnLoad(this);
 	 }
 	 
 	 void Update()
 	 {
-		 if (timeRemaining == 0){
+		 if (timeRemaining == 0 && active){
 			 SendMessageUpwards("timeHasElapsed");
-			 destroyTimer();
+			 resetTimer();
 		 }
-	 
-		 Debug.Log(timeRemaining + " Seconds remaining!");
 	 }
 	 
 	 void decreaseTimeRemaining(){
-		 timeRemaining --;
+		 if(active){
+			 timeRemaining --;
+			 Debug.Log(timeRemaining + " Seconds remaining!");
+		}
 	 }
 	 
-	 void destroyTimer(){
-		 Destroy(this);
+	 void resetTimer(){
+		 active = false;
+		 timeRemaining = 60f;
 	 }
 }

@@ -13,15 +13,22 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if((Application.loadedLevelName == "EndStateWin" ||
+		Application.loadedLevelName == "EndStateLose" ||
+		Application.loadedLevelName == "Landing") && FindObjectOfType<Timer>() != null){
+			BroadcastMessage("resetTimer");
+		}
 		if (gameWon)
 		 {
 			 Application.LoadLevel("EndStateWin");
+			 BroadcastMessage("resetTimer");
+			 gameWon = false;
 		 }
 	 
 		 if (timeElapsed)
 		 {
 			 Application.LoadLevel("EndStateLose");
+			 timeElapsed = false;
 		 }
 	}
 	
