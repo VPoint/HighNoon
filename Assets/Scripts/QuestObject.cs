@@ -15,10 +15,24 @@ public class QuestObject : MonoBehaviour
     public bool isItemQuest;
     public string targetItem;
 
+    public bool needsOtherItemApplied;
+    public string otherItemValue;
+    public static string lastTargetItem;
+
+    //private static bool qObjExists;
+
     // Use this for initialization
     void Start()
     {
-
+        //if (!qObjExists)
+        //{
+        //    qObjExists = true;
+        //    DontDestroyOnLoad(transform.gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
 
     }
 
@@ -26,14 +40,32 @@ public class QuestObject : MonoBehaviour
     void Update()
     {
 
+
+
         if (isItemQuest)
         {
             if (theQM.itemCollected == targetItem)
             {
+                lastTargetItem = targetItem;
                 theQM.itemCollected = null;
 
                 EndQuest();
             }
+            
+        }
+        if (needsOtherItemApplied)
+        {
+            if (theQM.questCompleted[questNumber - 1])
+            {
+                theQM.itemCollected = lastTargetItem;
+
+                if(theQM.itemCollected == otherItemValue)
+                {
+                    theQM.itemCollected = null;
+                    EndQuest();
+                }
+            }
+
         }
     }
 
