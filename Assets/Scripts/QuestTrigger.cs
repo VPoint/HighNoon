@@ -36,7 +36,7 @@ public class QuestTrigger : MonoBehaviour
             {
 				theQM.quests[questNumber].gameObject.SetActive(true);
                 theQM.quests[questNumber].StartQuest();
-
+				Debug.Log("Start Quest" + questNumber);
                 //es added
 				//Destroy(gameObject);
             }

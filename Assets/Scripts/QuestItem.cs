@@ -48,32 +48,36 @@ public class QuestItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!theQM.questCompleted[questNumber])
-            gameObject.SetActive(true);
-        else
-            gameObject.SetActive(false);
+        //if (!theQM.questCompleted[questNumber])
+        //   gameObject.SetActive(true);
+        //else
+        //    gameObject.SetActive(false);
     }
 
     void OnMouseDown()
     {
         //Debug.Log("Mouse down method");
-		Debug.Log(theQM.itemCollected + " then " + (theQM.itemCollected != otherItemValue).ToString());
-		if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
-        {
-            //Debug.Log("Mouse down method activated");
+		Debug.Log(theQM.itemEquipped + " then " + needsOtherItemApplied + " and " + (theQM.itemEquipped == otherItemValue));
+		if (!theQM.questCompleted[questNumber]){
+            Debug.Log("Mouse down method activated");
             theQM.itemCollected = itemName;
             theIM.iItemCollected = itemName;
 
-            if (needsOtherItemApplied && theQM.itemCollected != otherItemValue)
-            {
+            if (needsOtherItemApplied && !(theQM.itemEquipped == otherItemValue)){
                 ShowItemDescription();
-            }
-            else
-            {
-
-                theIM.iBoxes[iBoxNumber].ShowItem(itemName);
-                gameObject.SetActive(false);
-                //Destroy(gameObject);
+            } else {
+				Debug.Log("Entered in the QuestItem Else");
+					// THIS NEEDS TO BE CONDITIONAL ON WHETHER WE ACTUALLY COLLECT THIS ITEM
+				if(itemName == "Spoon"){
+					Debug.Log(itemName + " should join the inventory");
+					theIM.iBoxes[iBoxNumber].ShowItem(itemName);
+					gameObject.SetActive(false);
+				}else {
+					Debug.Log(itemName + " should disappear or something");
+					Destroy(gameObject);
+				}
+                
+                
             }
 
        }
@@ -82,10 +86,10 @@ public class QuestItem : MonoBehaviour
 	
 	void ShowItemDescription(){
         //es added
-        //Debug.Log("show description!!");
-		theDM.dialogLines = theDH.dialogueLines;
-        theDM.currentLine = 0;
-        theDM.ShowDialog();
+        Debug.Log("show description!!");
+		//theDM.dialogLines = theDH.dialogueLines;
+        //theDM.currentLine = 0;
+        //theDM.ShowDialog();
 	}
 
 

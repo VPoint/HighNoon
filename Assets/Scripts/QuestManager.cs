@@ -11,6 +11,7 @@ public class QuestManager : MonoBehaviour
     public DialogueManager theDM;
 
     public string itemCollected;
+	public string itemEquipped;
 
     private static bool qmExists;
 

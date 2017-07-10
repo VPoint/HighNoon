@@ -10,7 +10,7 @@ public class InventoryItem : MonoBehaviour
     public string iItemName;
 
     //private static bool iItemExists;
-    public string collectedItem;
+    //public string collectedItem;
 
     public GameModel theGM;
 
@@ -42,15 +42,15 @@ public class InventoryItem : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (theGM.currState == GameModel.State.INSPECT)
+        if (theGM.GetState() == GameModel.State.INSPECT)
         {
             //item.DisplayDescription();
         }
-        else if (theGM.currState == GameModel.State.USE)
+        else if (theGM.GetState() == GameModel.State.USE)
         {
-            collectedItem = iItemName;
+            theGM.PerformActionOnSelected(iItemName);
         }
-        else if (theGM.currState == GameModel.State.PICKUP)
+        else if (theGM.GetState() == GameModel.State.PICKUP)
         {
             //AddToInventory(item);
         }

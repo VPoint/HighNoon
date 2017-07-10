@@ -21,8 +21,9 @@ public class Action : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void ChangeState()
     {
-        theGM.SetState(instructionID);
+		Debug.Log("Action Selected");
+       theGM.SetState(instructionID);
     }
 }
