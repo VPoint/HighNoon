@@ -46,8 +46,8 @@ public class QuestObject : MonoBehaviour
         {
             if (theQM.itemCollected == targetItem)
             {
-                lastTargetItem = targetItem;
-                theQM.itemCollected = null;
+                //lastTargetItem = targetItem;
+                //theQM.itemCollected = null;
 
                 EndQuest();
             }

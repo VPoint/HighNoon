@@ -57,11 +57,10 @@ public class QuestItem : MonoBehaviour
     void OnMouseDown()
     {
         //Debug.Log("Mouse down method");
+		Debug.Log("Quest"+ questNumber + "completed?? " + !theQM.questCompleted[questNumber]);
 		Debug.Log(theQM.itemEquipped + " then " + needsOtherItemApplied + " and " + (theQM.itemEquipped == otherItemValue));
 		if (!theQM.questCompleted[questNumber]){
             Debug.Log("Mouse down method activated");
-            theQM.itemCollected = itemName;
-            theIM.iItemCollected = itemName;
 
             if (needsOtherItemApplied && !(theQM.itemEquipped == otherItemValue)){
                 ShowItemDescription();
@@ -71,11 +70,15 @@ public class QuestItem : MonoBehaviour
 				if(itemName == "Spoon"){
 					Debug.Log(itemName + " should join the inventory");
 					theIM.iBoxes[iBoxNumber].ShowItem(itemName);
+					theIM.iItemCollected = itemName;
 					gameObject.SetActive(false);
 				}else {
 					Debug.Log(itemName + " should disappear or something");
 					Destroy(gameObject);
 				}
+				
+				theQM.itemCollected = itemName;
+				
                 
                 
             }
