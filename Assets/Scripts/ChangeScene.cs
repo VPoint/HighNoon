@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class ChangeScene : MonoBehaviour {
 
-	public void NextLevelButton(int index)
+    private void Start()
+    {
+        //DontDestroyOnLoad(transform.gameObject);
+    }
+
+    public void NextLevelButton(int index)
      {
          Application.LoadLevel(index);
      }

@@ -15,10 +15,20 @@ public class QuestObject : MonoBehaviour
     public bool isItemQuest;
     public string targetItem;
 
+    private static bool qObjExists;
+
     // Use this for initialization
     void Start()
     {
-
+        if (!qObjExists)
+        {
+            qObjExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
     }
 

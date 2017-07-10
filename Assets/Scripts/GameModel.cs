@@ -6,13 +6,32 @@ public class GameModel : MonoBehaviour {
  	private enum State {NONE, INSPECT, USE, PICKUP, COMBINE}
 	private State currState = State.NONE;
 	private Item[] combine = new Item[2];
-	private Item[] inventory = new Item[3];
 
-	// Use this for initialization
-	void Start () {
-		// set timer
-		// reset score to zero
-	}
+    private Item[] inventory = new Item[3];
+    private InventoryItem[] iItems = new InventoryItem[3];
+    public InventoryBox[] iBoxes;
+
+    private static bool gmExists;
+
+    // Use this for initialization
+    void Start () {
+        if (!gmExists)
+        {
+            gmExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        currState = State.USE;
+
+        
+
+        // set timer
+        // reset score to zero
+    }
 	
 	// Update is called once per frame
 	void Update () {

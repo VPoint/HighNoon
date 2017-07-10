@@ -6,10 +6,14 @@ public class QuestItem : MonoBehaviour
 {
 
     public int questNumber;
-
     private QuestManager theQM;
-
     public string itemName;
+
+    //i added
+    public int iBoxNumber;
+    private InventoryManager theIM;
+
+    private static bool qItemExists;
 
 
 
@@ -17,6 +21,18 @@ public class QuestItem : MonoBehaviour
     void Start()
     {
         theQM = FindObjectOfType<QuestManager>();
+        theIM = FindObjectOfType<InventoryManager>();
+        gameObject.SetActive(true);
+
+        if (!qItemExists)
+        {
+            qItemExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
     }
 
@@ -34,11 +50,21 @@ public class QuestItem : MonoBehaviour
         {
             //Debug.Log("Mouse down method activated");
             theQM.itemCollected = itemName;
+            theIM.iItemCollected = itemName;
 
+            //theIM.iBoxes[iBoxNumber].gameObject.SetActive(true);
+            theIM.iBoxes[iBoxNumber].ShowItem(itemName);
             gameObject.SetActive(false);
-
-
         }
+
+            
+
+            
+
+            
+
+
+        
 
     }
 

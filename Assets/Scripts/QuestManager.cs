@@ -12,10 +12,25 @@ public class QuestManager : MonoBehaviour
 
     public string itemCollected;
 
+
+    private static bool qmExists;
+
     // Use this for initialization
     void Start()
     {
         questCompleted = new bool[quests.Length];
+
+
+        if (!qmExists)
+        {
+            qmExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 
