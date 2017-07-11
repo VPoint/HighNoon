@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour {
-	 public float timeRemaining = 60f;
+	 public float timeRemaining = 360f;
 	 public bool active = true;
 	 
 	 void Start(){
@@ -28,6 +28,10 @@ public class Timer : MonoBehaviour {
 	 
 	 void resetTimer(){
 		 active = false;
-		 timeRemaining = 60f;
+		 timeRemaining = 360f;
+	 }
+	 
+	 public float getTime(){
+		 return timeRemaining;
 	 }
 }
