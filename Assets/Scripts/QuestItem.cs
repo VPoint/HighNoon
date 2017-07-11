@@ -27,9 +27,6 @@ public class QuestItem : MonoBehaviour
     public bool pickedUp;
     public bool used;
 
-    //private static bool qItemExists;
-
-
     // Use this for initialization
     void Start()
     {
@@ -40,17 +37,6 @@ public class QuestItem : MonoBehaviour
         theIM = FindObjectOfType<InventoryManager>();
         theGM = FindObjectOfType<GameModel>();
 
-
-
-        //if (!qItemExists)
-        //{
-        //    qItemExists = true;
-        //    DontDestroyOnLoad(transform.gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
     }
 
     // Update is called once per frame
@@ -96,7 +82,7 @@ public class QuestItem : MonoBehaviour
                     {
                         theIM.iBoxes[iBoxNumber].ShowItem(itemName);
                         gameObject.SetActive(false);
-                        //Destroy(gameObject);
+                        Destroy(gameObject);
 
                         SetItemPickedUp(theQM.quests[questNumber]);
                     }

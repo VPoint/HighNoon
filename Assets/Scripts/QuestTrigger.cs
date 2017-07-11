@@ -51,21 +51,5 @@ public class QuestTrigger : MonoBehaviour
 
     }
 
-    //public bool allRqCompleted()
-    //{
-    //    if (questNumber == 0)
-    //    {
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        for (int i = 0; i < preRq.Length; i++)
-    //        {
-    //            Debug.Log("Specific quest completed" + theQM.questCompleted[preRq[0]]);
-    //            if (theQM.questCompleted[preRq[i]] == false)
-    //                return false;
-    //        }
-    //        return true;
-    //    }
-    //}
+
 }

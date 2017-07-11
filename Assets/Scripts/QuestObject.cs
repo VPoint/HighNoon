@@ -25,22 +25,9 @@ public class QuestObject : MonoBehaviour
     public bool used;
 
 
-    //private static bool qObjExists;
-
     // Use this for initialization
     void Start()
     {
-        //theQM = FindObjectOfType<QuestManager>();
-        //if (!qObjExists)
-        //{
-        //    qObjExists = true;
-        //    DontDestroyOnLoad(transform.gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
-        //startingScene = SceneManager.GetActiveScene();
 
     }
 

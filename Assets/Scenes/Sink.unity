@@ -144,8 +144,6 @@ MonoBehaviour:
   targetItem: Spoon
   needsOtherItemApplied: 0
   otherItemValue: 
-  pickedUp: 0
-  used: 0
 --- !u!4 &28934645
 Transform:
   m_ObjectHideFlags: 0
@@ -228,6 +226,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!1 &133271500
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +630,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!4 &351367441
 Transform:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 371158362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d38d3fc50795614287c1bcbec359e10, type: 3}
+  m_Script: {fileID: 11500000, guid: 945c7d36954ff8641bc27566cf0b68e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   instructionID: 2
@@ -732,9 +732,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 371158364}
-        m_MethodName: ChangeState
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: SetState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -847,6 +847,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!1 &582030799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,8 +1026,6 @@ MonoBehaviour:
   targetItem: MetalBar
   needsOtherItemApplied: 0
   otherItemValue: 
-  pickedUp: 0
-  used: 0
 --- !u!4 &683354746
 Transform:
   m_ObjectHideFlags: 0
@@ -1382,8 +1381,6 @@ MonoBehaviour:
   iBoxNumber: 0
   preRq: 
   canBePicked: 1
-  pickedUp: 0
-  used: 0
 --- !u!212 &859023643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1424,6 +1421,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!114 &859023644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,10 +1607,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021744198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d38d3fc50795614287c1bcbec359e10, type: 3}
+  m_Script: {fileID: 11500000, guid: 945c7d36954ff8641bc27566cf0b68e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructionID: 0
+  instructionID: 4
 --- !u!114 &1021744201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1652,9 +1650,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1021744200}
-        m_MethodName: ChangeState
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: SetState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1819,8 +1817,6 @@ MonoBehaviour:
   targetItem: 
   needsOtherItemApplied: 1
   otherItemValue: Spoon
-  pickedUp: 0
-  used: 0
 --- !u!4 &1074399225
 Transform:
   m_ObjectHideFlags: 0
@@ -2038,6 +2034,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!114 &1284286914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2185,10 +2182,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1597064136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d38d3fc50795614287c1bcbec359e10, type: 3}
+  m_Script: {fileID: 11500000, guid: 945c7d36954ff8641bc27566cf0b68e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructionID: 0
+  instructionID: 3
 --- !u!114 &1597064139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2228,9 +2225,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1597064138}
-        m_MethodName: ChangeState
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: SetState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2369,8 +2366,6 @@ MonoBehaviour:
   targetItem: 
   needsOtherItemApplied: 1
   otherItemValue: Spoon
-  pickedUp: 0
-  used: 0
 --- !u!4 &1824219616
 Transform:
   m_ObjectHideFlags: 0
@@ -2499,7 +2494,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1987482993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d38d3fc50795614287c1bcbec359e10, type: 3}
+  m_Script: {fileID: 11500000, guid: 945c7d36954ff8641bc27566cf0b68e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   instructionID: 1
@@ -2542,9 +2537,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1987482995}
-        m_MethodName: ChangeState
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: SetState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

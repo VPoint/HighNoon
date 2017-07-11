@@ -14,20 +14,10 @@ public class DialogueManager : MonoBehaviour
     public string[] dialogLines;
     public int currentLine;
 
-    //private static bool dmExists;
 
     // Use this for initialization
     void Start()
     {
-        //if (!dmExists)
-        //{
-        //    dmExists = true;
-        //    DontDestroyOnLoad(transform.gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
 
     }
 

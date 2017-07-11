@@ -13,40 +13,9 @@ public class InventoryBox : MonoBehaviour
 
     public bool isSelected;
 
-    //private static bool iBoxExists;
-
-
-
-
-
-
     // Use this for initialization
     void Start()
     {
-
-        //if (!iBoxExists)
-        //{
-        //    iBoxExists = true;
-        //    //DontDestroyOnLoad(transform.gameObject);
-        //}
-        //else
-        //{
-        //    if (iItems[currentItem] != null)
-        //    {
-        //        gameObject.SetActive(true);
-
-        //        //iItems[currentItem].gameObject.SetActive(true);
-        //        iItem.gameObject.SetActive(true);
-        //    }
-        //}
-
-        //if (iItems[currentItem] != null)
-        //{
-        //    gameObject.SetActive(true);
-
-        //    iItems[currentItem].gameObject.SetActive(true);
-        //}
-
 
 
     }
@@ -59,16 +28,6 @@ public class InventoryBox : MonoBehaviour
 
     public void ShowItem(string itemName)
     {
-        //for (int i = 0; i < iItems.Length; i++)
-        //{
-        //    if (iItems[i].iItemName == itemName)
-        //    {
-        //        currentItem = i;
-        //        gameObject.SetActive(true);
-        //        iItems[i].gameObject.SetActive(true);
-        //    }
-        //}
-
         gameObject.SetActive(true);
         iItem.gameObject.SetActive(true);
     }
@@ -81,14 +40,17 @@ public class InventoryBox : MonoBehaviour
 
     void OnMouseDown()
     {
+        Debug.Log("Got clicked");
         if (!isSelected) {
 
+            Debug.Log("!isSelected");
             GetComponent<UnityEngine.UI.Image>().color = Color.red;
             isSelected = true;
         }
         else
         {
-            //ColorUtility.TryParseHtmlString("#E4CFC0FF", out myColor);
+
+            Debug.Log("isSelected");
             GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
             isSelected = false;
         }

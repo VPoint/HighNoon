@@ -9,7 +9,6 @@ public class InventoryItem : MonoBehaviour
     public InventoryManager theIM;
     public string iItemName;
 
-    //private static bool iItemExists;
     public string collectedItem;
 
     public GameModel theGM;
@@ -22,17 +21,6 @@ public class InventoryItem : MonoBehaviour
     {
 
         theIM = FindObjectOfType<InventoryManager>();
-
-        //if (!iItemExists)
-        //{
-        //    iItemExists = true;
-        //    DontDestroyOnLoad(transform.gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
-        //DontDestroyOnLoad(transform.gameObject);
 
     }
 
