@@ -18,7 +18,7 @@ public class QuestObject : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+		theQM = FindObjectOfType<QuestManager>();
 
     }
 

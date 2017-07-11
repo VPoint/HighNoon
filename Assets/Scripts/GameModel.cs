@@ -3,18 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameModel : MonoBehaviour {
- 	private enum State {NONE, INSPECT, USE, PICKUP, COMBINE}
+ 	public enum State {NONE, INSPECT, USE, PICKUP, COMBINE}
 	private State currState = State.NONE;
-	private Item[] combine = new Item[2];
-	private Item[] inventory = new Item[3];
+	private string[] combine = new string[2];
+	//private Item[] inventory = new Item[3];
+	
+    private InventoryItem[] iItems = new InventoryItem[3];
+    private InventoryBox[] iBoxes;
+    private static bool gmExists;
+	
+	InventoryManager inventory;
+	QuestManager questManager;
 
-	// Use this for initialization
-	void Start () {
-	}
+    // Use this for initialization
+    void Start () {
+		questManager = FindObjectOfType<QuestManager>();;
+		inventory = FindObjectOfType<InventoryManager>();;
+		
+        if (!gmExists)
+        {
+            gmExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        //currState = State.USE;
+
+        // set timer
+        // reset score to zero
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
+		// decrement timer
+		// update score
 	}
 
 	public void SetState(int i){
@@ -39,15 +64,20 @@ public class GameModel : MonoBehaviour {
 		Debug.Log(currState);
 	}
 	
-	public void PerformActionOnSelected(Item item){
+	public State GetState(){
+		return currState;
+	}
+	
+	public void PerformActionOnSelected(string item){
 		if(currState == State.INSPECT){
-			item.DisplayDescription();
+			//item.DisplayDescription();
 		} else if(currState == State.USE){
-			item.Use();
+			Debug.Log("Using the " + item);
+			questManager.itemEquipped = item;
 		} else if(currState == State.PICKUP){
-			AddToInventory(item);
+			//AddToInventory(item);
 		} else if(currState == State.COMBINE){
-			if(combine[0] == null){
+			/*if(combine[0] == null){
 				combine[0] = item;
 				item = null;
 			} else {
@@ -59,7 +89,7 @@ public class GameModel : MonoBehaviour {
 				//highlight item and wait for other selection
 			} else {
 				Combine(combine[0], combine[1]);
-			}
+			}*/
 		}
 	}
 	
@@ -75,10 +105,10 @@ public class GameModel : MonoBehaviour {
 	private void AddToInventory(Item item){
 		bool itemAdded = false;
 		for(int pos = 0; pos < 3; pos++){
-			if(inventory[pos] == null){
-				inventory[pos] = item;
-				itemAdded = true;
-			}
+			//if(inventory[pos] == null){
+			//	inventory[pos] = item;
+			//	itemAdded = true;
+			//}
 		}
 		
 		if(!itemAdded) { 

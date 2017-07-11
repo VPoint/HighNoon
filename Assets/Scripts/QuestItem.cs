@@ -15,6 +15,9 @@ public class QuestItem : MonoBehaviour
 
 	public bool needsOtherItemApplied;
 	public string otherItemValue;
+	
+	public int iBoxNumber;
+    private InventoryManager theIM;
 
 
     // Use this for initialization
@@ -23,6 +26,8 @@ public class QuestItem : MonoBehaviour
         theQM = FindObjectOfType<QuestManager>();
 		theDH = FindObjectOfType<DialogHolder>();
 		theDM = FindObjectOfType<DialogueManager>();
+		
+		 theIM = FindObjectOfType<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -35,16 +40,28 @@ public class QuestItem : MonoBehaviour
     {
         //Debug.Log("Mouse down method");
 		Debug.Log(theQM.itemCollected + " then " + (theQM.itemCollected != otherItemValue).ToString());
-		if (needsOtherItemApplied && theQM.itemCollected != otherItemValue){
-			ShowItemDescription();
-		} else if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
-        {
-            //Debug.Log("Mouse down method activated");
-            theQM.itemCollected = itemName;
+		if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf){
+			
+			if(needsOtherItemApplied && theQM.itemCollected != otherItemValue){
+				ShowItemDescription();
+			} else {
+				Debug.Log("Entered in the QuestItem Else");
+				// THIS NEEDS TO BE CONDITIONAL ON WHETHER WE ACTUALLY COLLECT THIS ITEM
+				if(itemName == "Spoon"){
+					Debug.Log(itemName + " should join the inventory");
+					theIM.iBoxes[iBoxNumber].ShowItem(itemName);
+					theIM.iItemCollected = itemName;
+					gameObject.SetActive(false);
+				}else {
+					Debug.Log(itemName + " should disappear or something");
+					Destroy(gameObject);
+				}
+				
+				theQM.itemCollected = itemName;
 
-            gameObject.SetActive(false);
-
-       }
+		   }
+		   
+		}
 
     }
 	
