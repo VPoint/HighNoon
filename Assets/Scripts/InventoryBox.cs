@@ -81,14 +81,17 @@ public class InventoryBox : MonoBehaviour
 
     void OnMouseDown()
     {
+        Debug.Log("Got clicked");
         if (!isSelected) {
 
+            Debug.Log("!isSelected");
             GetComponent<UnityEngine.UI.Image>().color = Color.red;
             isSelected = true;
         }
         else
         {
-            //ColorUtility.TryParseHtmlString("#E4CFC0FF", out myColor);
+
+            Debug.Log("isSelected");
             GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
             isSelected = false;
         }

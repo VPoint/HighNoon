@@ -96,7 +96,7 @@ public class QuestItem : MonoBehaviour
                     {
                         theIM.iBoxes[iBoxNumber].ShowItem(itemName);
                         gameObject.SetActive(false);
-                        //Destroy(gameObject);
+                        Destroy(gameObject);
 
                         SetItemPickedUp(theQM.quests[questNumber]);
                     }
