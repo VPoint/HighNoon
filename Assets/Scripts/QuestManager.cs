@@ -12,17 +12,30 @@ public class QuestManager : MonoBehaviour
 
     public string itemCollected;
 
+    private static bool qmExists;
+
     // Use this for initialization
     void Start()
     {
+        
         questCompleted = new bool[quests.Length];
+
+        if (!qmExists)
+        {
+            qmExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        theDM = FindObjectOfType<DialogueManager>();
 
     }
 
@@ -33,5 +46,8 @@ public class QuestManager : MonoBehaviour
         theDM.dialogLines[0] = questText;
 
         theDM.currentLine = 0;
+
+        //es removed
+        theDM.ShowDialog();
     }
 }

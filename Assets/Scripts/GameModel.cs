@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class GameModel : MonoBehaviour {
  	public enum State {NONE, INSPECT, USE, PICKUP, COMBINE}
-	private State currState = State.NONE;
-	private string[] combine = new string[2];
-	//private Item[] inventory = new Item[3];
-	
+	public State currState = State.NONE;
+	private Item[] combine = new Item[2];
+	private Item[] inventory = new Item[3];
+
+
     private InventoryItem[] iItems = new InventoryItem[3];
-    private InventoryBox[] iBoxes;
+    public InventoryBox[] iBoxes;
     private static bool gmExists;
-	
-	InventoryManager inventory;
-	QuestManager questManager;
 
     // Use this for initialization
     void Start () {
-		questManager = FindObjectOfType<QuestManager>();;
-		inventory = FindObjectOfType<InventoryManager>();;
-		
+
         if (!gmExists)
         {
             gmExists = true;
@@ -30,7 +26,7 @@ public class GameModel : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        //currState = State.USE;
+        currState = State.INSPECT;
 
         // set timer
         // reset score to zero
@@ -64,55 +60,54 @@ public class GameModel : MonoBehaviour {
 		Debug.Log(currState);
 	}
 	
-	public State GetState(){
-		return currState;
-	}
-	
-	public void PerformActionOnSelected(string item){
+	public void PerformActionOnSelected(QuestItem qstI, InventoryItem[] invIs ){
 		if(currState == State.INSPECT){
-			//item.DisplayDescription();
+			qstI.ShowItemDescription();
 		} else if(currState == State.USE){
-			Debug.Log("Using the " + item);
-			questManager.itemEquipped = item;
+			//qstI.Use(invIs[0]);
 		} else if(currState == State.PICKUP){
-			//AddToInventory(item);
+			AddToInventory(qstI);
 		} else if(currState == State.COMBINE){
-			/*if(combine[0] == null){
-				combine[0] = item;
-				item = null;
-			} else {
-				combine[1] = item;
-			}
+			//if(invIs[0] == null){
+			//	combine[0] = item;
+			//	item = null;
+			//} else {
+			//	combine[1] = item;
+			//}
 			
-			if(combine[1] == null && item == null) {
+			//if(combine[1] == null && item == null) {
 				
 				//highlight item and wait for other selection
-			} else {
-				Combine(combine[0], combine[1]);
-			}*/
+            if(invIs[0] == null || invIs[1] == null)
+            {
+                Debug.Log("Needs to select two items to combined");
+            
+			}else {
+				Combine(invIs[0], invIs[1]);
+			}
 		}
 	}
 	
-	private void Combine(Item o1, Item o2){
+	private void Combine(InventoryItem o1, InventoryItem o2){
 		if(o1.canBeCombined && o2.canBeCombined){
 			
 		} else {
 			// show dialog with "These items can not be combined"
-			Debug.Log("show dialog with error");
+			Debug.Log("These two items cannot be combined.");
 		}
 	}
 	
-	private void AddToInventory(Item item){
-		bool itemAdded = false;
-		for(int pos = 0; pos < 3; pos++){
-			//if(inventory[pos] == null){
-			//	inventory[pos] = item;
-			//	itemAdded = true;
-			//}
-		}
+	private void AddToInventory(QuestItem item){
+		//bool itemAdded = false;
+		//for(int pos = 0; pos < 3; pos++){
+		//	if(inventory[pos] == null){
+		//		inventory[pos] = item;
+		//		itemAdded = true;
+		//	}
+		//}
 		
-		if(!itemAdded) { 
-			// display inventory full message
-		}
+		//if(!itemAdded) { 
+		//	// display inventory full message
+		//}
 	}
 }

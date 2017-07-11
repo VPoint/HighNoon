@@ -9,7 +9,12 @@ public class InventoryItem : MonoBehaviour
     public InventoryManager theIM;
     public string iItemName;
 
+    //private static bool iItemExists;
+    public string collectedItem;
+
     public GameModel theGM;
+
+    public bool canBeCombined;
 
 
     // Use this for initialization
@@ -17,6 +22,17 @@ public class InventoryItem : MonoBehaviour
     {
 
         theIM = FindObjectOfType<InventoryManager>();
+
+        //if (!iItemExists)
+        //{
+        //    iItemExists = true;
+        //    DontDestroyOnLoad(transform.gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+        //DontDestroyOnLoad(transform.gameObject);
 
     }
 
@@ -28,8 +44,25 @@ public class InventoryItem : MonoBehaviour
 
     void OnMouseDown()
     {
-        theGM.PerformActionOnSelected(iItemName);
+        if (theGM.currState == GameModel.State.INSPECT)
+        {
+            //item.DisplayDescription();
+        }
+        else if (theGM.currState == GameModel.State.USE)
+        {
+            collectedItem = iItemName;
+        }
+        else if (theGM.currState == GameModel.State.PICKUP)
+        {
+            //AddToInventory(item);
+        }
+
     }
+
+    //public void Use(QuestItem qstI)
+    //{
+
+    //}
 
 
 }

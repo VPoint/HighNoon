@@ -12,7 +12,6 @@ public class QuestTrigger : MonoBehaviour
     public bool startQuest;
     public bool endQuest;
 
-    // Use this for initialization
     void Start()
     {
         theQM = FindObjectOfType<QuestManager>();
@@ -27,25 +26,46 @@ public class QuestTrigger : MonoBehaviour
 
     void OnMouseDown()
     {
-        //Debug.Log("Quest Trigger Mouse down method");
-		//Debug.Log(startQuest.ToString() + " and " + theQM.quests[questNumber].gameObject.activeSelf.ToString());
-        if (!theQM.questCompleted[questNumber])
-        {
-            //Debug.Log("Mouse down method activated");
-            if (startQuest && !theQM.quests[questNumber].gameObject.activeSelf)
-            {
-				theQM.quests[questNumber].gameObject.SetActive(true);
-                theQM.quests[questNumber].StartQuest();
-				Destroy(gameObject);
-            }
 
-            if (endQuest && theQM.quests[questNumber].gameObject.activeSelf)
+            if (!theQM.questCompleted[questNumber])
             {
-                theQM.quests[questNumber].EndQuest();
-            }
+                //Debug.Log("Mouse down method activated");
+                if (startQuest && !theQM.quests[questNumber].gameObject.activeSelf)
+                {
+                    theQM.quests[questNumber].gameObject.SetActive(true);
+                    theQM.quests[questNumber].StartQuest();
 
+                    //es added
+                    //Destroy(gameObject);
+                }
+
+                if (endQuest && theQM.quests[questNumber].gameObject.activeSelf)
+                {
+                    theQM.quests[questNumber].EndQuest();
+                }
 
         }
 
+        
+
+
     }
+
+    //public bool allRqCompleted()
+    //{
+    //    if (questNumber == 0)
+    //    {
+    //        return true;
+    //    }
+    //    else
+    //    {
+    //        for (int i = 0; i < preRq.Length; i++)
+    //        {
+    //            Debug.Log("Specific quest completed" + theQM.questCompleted[preRq[0]]);
+    //            if (theQM.questCompleted[preRq[i]] == false)
+    //                return false;
+    //        }
+    //        return true;
+    //    }
+    //}
 }
