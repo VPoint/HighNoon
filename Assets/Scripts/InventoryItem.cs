@@ -14,6 +14,8 @@ public class InventoryItem : MonoBehaviour
 
     public GameModel theGM;
 
+    public bool canBeCombined;
+
 
     // Use this for initialization
     void Start()
@@ -56,6 +58,11 @@ public class InventoryItem : MonoBehaviour
         }
 
     }
+
+    //public void Use(QuestItem qstI)
+    //{
+
+    //}
 
 
 }
