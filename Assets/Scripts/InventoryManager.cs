@@ -10,8 +10,8 @@ public class InventoryManager : MonoBehaviour
     public string iItemCollected;
 
     private static bool imExists;
-
-
+	
+	private bool active;
     // Use this for initialization
     void Start()
     {
@@ -34,4 +34,18 @@ public class InventoryManager : MonoBehaviour
     {
 
     }
+	
+	public void deactivateInventory(){
+		if(active){
+			gameObject.SetActive(!active);
+			active = false;
+		}
+	}
+	
+	public void activateInventory(){
+		if(!active){
+			gameObject.SetActive(!active);
+			active = true;
+		}
+	}
 }

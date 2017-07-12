@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestItem : MonoBehaviour
 {
@@ -19,13 +20,23 @@ public class QuestItem : MonoBehaviour
 
     //i added
     public int iBoxNumber;
+    public int iSlotNumber;
     private InventoryManager theIM;
 
     public int[] preRq;
 
     public bool canBePicked;
-    public bool pickedUp;
-    public bool used;
+
+
+
+
+
+  
+
+    
+
+    
+
 
     // Use this for initialization
     void Start()
@@ -37,6 +48,8 @@ public class QuestItem : MonoBehaviour
         theIM = FindObjectOfType<InventoryManager>();
         theGM = FindObjectOfType<GameModel>();
 
+
+
     }
 
     // Update is called once per frame
@@ -44,6 +57,7 @@ public class QuestItem : MonoBehaviour
     {
         if (!theQM.questCompleted[questNumber])
             gameObject.SetActive(true);
+        
         else
             gameObject.SetActive(false);
     }
@@ -80,6 +94,8 @@ public class QuestItem : MonoBehaviour
                     Debug.Log("all rq QItem" + allRq);
                     if (allRq == true)
                     {
+                        theIM.iBoxes[iBoxNumber].isSelected = false;
+                        theIM.iBoxes[iBoxNumber].GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
                         theIM.iBoxes[iBoxNumber].ShowItem(itemName);
                         gameObject.SetActive(false);
                         Destroy(gameObject);
@@ -101,7 +117,7 @@ public class QuestItem : MonoBehaviour
                 theDM.ShowBox("What item do you wanna use?");
                 Debug.Log("What item do you wanna use ? ");
 
-                if (theIM.iBoxes[iBoxNumber].isSelected && theIM.iBoxes[iBoxNumber].iItem.iItemName == otherItemValue)
+                if (theIM.iBoxes[iBoxNumber].isSelected && theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName == otherItemValue)
                 {
                     theDM.ShowBox("And where to apply this item? Choose an item on the screen");
                     Debug.Log("And where to apply this item? Choose an item on the screen");
@@ -111,13 +127,16 @@ public class QuestItem : MonoBehaviour
                     if (allRq == true)
                     {
                         theIM.iBoxes[iBoxNumber].gameObject.SetActive(false);
+                        theIM.iBoxes[iBoxNumber].isSelected = false;
+                        theIM.iBoxes[iBoxNumber].GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
+                        theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].gameObject.SetActive(false);
                         gameObject.SetActive(false);
                         //Destroy(gameObject);
 
                         SetItemUsed(theQM.quests[questNumber]);
 
-                        theDM.ShowBox("You used the item " + theIM.iBoxes[iBoxNumber].iItem.iItemName);
-                        Debug.Log("You used the item " + theIM.iBoxes[iBoxNumber].iItem.iItemName);
+                        theDM.ShowBox("You used the item " + theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName);
+                        Debug.Log("You used the item " + theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName);
 
                     }
                 }
@@ -140,6 +159,7 @@ public class QuestItem : MonoBehaviour
 
 
         }
+        
 
 
 
@@ -153,6 +173,11 @@ public class QuestItem : MonoBehaviour
     public void SetItemUsed(QuestObject qo)
     {
         qo.used = true;
+    }
+
+    public void SetItemSolved(QuestObject qo)
+    {
+        qo.solved = true;
     }
 
     public void ShowItemDescription()
@@ -180,6 +205,8 @@ public class QuestItem : MonoBehaviour
             return true;
         }
     }
+
+
 
 
 
