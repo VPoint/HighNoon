@@ -42,6 +42,8 @@ public class GameController : MonoBehaviour {
 		 {
 			 Application.LoadLevel("EndStateWin");
 			 BroadcastMessage("resetTimer");
+			 theGM.deactivateModel();
+			 theIM.deactivateInventory();
 			 gameWon = false;
 		 }
 	 
@@ -49,6 +51,8 @@ public class GameController : MonoBehaviour {
 		 {
 			 Application.LoadLevel("EndStateLose");
 			 BroadcastMessage("resetTimer");
+			 theGM.deactivateModel();
+			 theIM.deactivateInventory();
 			 timeElapsed = false;
 		 }
 	}
