@@ -36,6 +36,8 @@ public class InventoryBox : MonoBehaviour
         }
     }
 
+    
+
     public void DesactiveBox()
     {
         iItems[currentItem] = null;

@@ -26,6 +26,7 @@ public class QuestObject : MonoBehaviour
     public bool pickedUp;
     public bool used;
     public bool solved;
+    public bool combined;
 
 
     // Use this for initialization
@@ -55,8 +56,11 @@ public class QuestObject : MonoBehaviour
         }
         if (needsOtherItemApplied && used)
         {
-
+            
             theQM.itemCollected = lastTargetItem;
+            Debug.Log("Item Collected " + theQM.itemCollected);
+            Debug.Log("Last Target Item " + lastTargetItem);
+            Debug.Log("Other Item Value " + otherItemValue);
 
             if (theQM.itemCollected == otherItemValue)
             {
@@ -67,6 +71,11 @@ public class QuestObject : MonoBehaviour
         }
 
         if (solved)
+        {
+            EndQuest();
+        }
+
+        if (combined)
         {
             EndQuest();
         }

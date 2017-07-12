@@ -637,9 +637,6 @@ MonoBehaviour:
   iSlotNumber: 0
   preRq: 05000000
   canBePicked: 1
-  inputLeft: {fileID: 0}
-  inputMiddle: {fileID: 0}
-  inputRight: {fileID: 0}
 --- !u!61 &151285109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1079,9 +1076,6 @@ MonoBehaviour:
   iSlotNumber: 0
   preRq: 04000000
   canBePicked: 0
-  inputLeft: {fileID: 0}
-  inputMiddle: {fileID: 0}
-  inputRight: {fileID: 0}
 --- !u!61 &463184502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1564,7 +1558,6 @@ MonoBehaviour:
   dialogActive: 1
   dialogLines:
   - Eww.... it looks this part of the wood is rotting.
-  - Maybe I can use something to pry it out?
   currentLine: 0
 --- !u!222 &654517000
 CanvasRenderer:
@@ -1744,9 +1737,6 @@ MonoBehaviour:
   iSlotNumber: 0
   preRq: 
   canBePicked: 0
-  inputLeft: {fileID: 0}
-  inputMiddle: {fileID: 0}
-  inputRight: {fileID: 0}
 --- !u!1 &763625084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,9 +2326,6 @@ MonoBehaviour:
   iSlotNumber: 0
   preRq: 03000000
   canBePicked: 0
-  inputLeft: {fileID: 0}
-  inputMiddle: {fileID: 0}
-  inputRight: {fileID: 0}
 --- !u!212 &1519183418
 SpriteRenderer:
   m_ObjectHideFlags: 0

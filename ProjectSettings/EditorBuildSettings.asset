@@ -44,3 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Safe.unity
     guid: 4a9bfe31cce9147418309561fbf4a914
+  - enabled: 1
+    path: Assets/Scenes/Crack.unity
+    guid: 0a13b96a60e8ce94a9add7c6d286cc29

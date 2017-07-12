@@ -624,9 +624,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dBox: {fileID: 218098203}
   dText: {fileID: 214568677}
-  dialogActive: 0
+  dialogActive: 1
   dialogLines:
-  - This bed seems pretty uncomfortable
+  - This bed seems pretty uncomfortable.
   currentLine: 0
 --- !u!222 &350026771
 CanvasRenderer:
@@ -1021,12 +1021,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1118718521}
   - component: {fileID: 1118718520}
-  - component: {fileID: 1118718519}
   - component: {fileID: 1118718518}
   - component: {fileID: 1118718517}
-  - component: {fileID: 1118718522}
   m_Layer: 5
-  m_Name: Quest123Trigger
+  m_Name: Quest1&3Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,20 +1058,6 @@ MonoBehaviour:
   questNumber: 1
   startQuest: 1
   endQuest: 0
---- !u!114 &1118718519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1118718516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b95cabef3c35aa4a81e872f0761945d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questNumber: 2
-  startQuest: 0
-  endQuest: 0
 --- !u!65 &1118718520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1104,20 +1088,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 25}
   m_SizeDelta: {x: 53.6, y: 23.1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1118718522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1118718516}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b95cabef3c35aa4a81e872f0761945d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questNumber: 0
-  startQuest: 1
-  endQuest: 0
 --- !u!1 &1228890075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,7 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   dialogueLines:
-  - I wonder if there's something I can use here...
+  - Meh...
 --- !u!61 &1248996629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1270,7 +1240,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 19.554688, y: 63.08806}
+  m_Offset: {x: 19.554688, y: 64.94311}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1281,7 +1251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 274.4892, y: 48.45721}
+  m_Size: {x: 274.4892, y: 44.747116}
   m_EdgeRadius: 0
 --- !u!1 &1256037787
 GameObject:
@@ -1650,7 +1620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   dialogueLines:
-  - A solid metal bar!
+  - A solid metal bar.
 --- !u!114 &1352919482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,7 +2571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   dialogueLines:
-  - I wonder if there's something I can use here...
+  - Meh...
 --- !u!61 &1715534273
 BoxCollider2D:
   m_ObjectHideFlags: 0

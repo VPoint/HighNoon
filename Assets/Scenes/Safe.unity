@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 215975846}
   - component: {fileID: 215975847}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: safeZoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +603,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bf3a06af5b231ab46ba9bba3cb847daf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cb76a279e4c98e4cacb1e3544b8d098, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1564,7 +1564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000039771094, y: -0.0000010078118}
+  m_AnchoredPosition: {x: 0, y: -5.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520254697
@@ -2116,5 +2116,5 @@ MonoBehaviour:
   dText: {fileID: 1696171874}
   dialogActive: 1
   dialogLines:
-  - Ugh... I guess they didn't bother to clean up after the last person...
+  - I gotta find the combinations to unlock the safe.
   currentLine: 0

@@ -363,8 +363,8 @@ MonoBehaviour:
   questNumber: 1
   theQM: {fileID: 828479592}
   theGM: {fileID: 0}
-  startText: Left Screw!
-  endText: Get the right screw!
+  startText: 
+  endText: You removed the screws.
   isItemQuest: 0
   targetItem: Screws
   needsOtherItemApplied: 1
@@ -373,6 +373,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!1 &233256520
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +508,65 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 35.4, y: 36}
   m_EdgeRadius: 0
+--- !u!1 &235651469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 235651471}
+  - component: {fileID: 235651470}
+  m_Layer: 5
+  m_Name: Quest7_COMB_Powder&Flint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &235651470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235651469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b54f7e1c1004e4cb31b078bee2b89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 7
+  theQM: {fileID: 828479592}
+  theGM: {fileID: 1838931806}
+  startText: 
+  endText: You have acquired the Explosives.
+  isItemQuest: 0
+  targetItem: Powder
+  needsOtherItemApplied: 0
+  otherItemValue: 
+  isPuzzleQuest: 0
+  pickedUp: 0
+  used: 0
+  solved: 0
+  combined: 0
+--- !u!224 &235651471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235651469}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 828479593}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 28.599998}
+  m_SizeDelta: {x: 320, y: 126.2}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &312905463
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +979,7 @@ MonoBehaviour:
   questNumber: 4
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
-  startText: Ply the ground with metal bar
+  startText: 
   endText: You see a hole!
   isItemQuest: 0
   targetItem: Screw2
@@ -929,6 +989,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!1 &612720315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1213,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &787356409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 787356410}
+  - component: {fileID: 787356413}
+  - component: {fileID: 787356412}
+  - component: {fileID: 787356411}
+  m_Layer: 0
+  m_Name: Explosives
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &787356410
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 787356409}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.2200012, y: 2.2999992, z: -40.02353}
+  m_LocalScale: {x: 1.05124, y: 1.18918, z: 1.00059}
+  m_Children: []
+  m_Father: {fileID: 924096565}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &787356411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 787356409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ec6984d8485644f83e51d7ddc46230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iBoxNumber: 1
+  theIM: {fileID: 1240908168}
+  iItemName: Explosives
+  collectedItem: 
+  theGM: {fileID: 1838931806}
+  questNumber: 8
+  canBeCombined: 0
+  itemToCombine: {fileID: 0}
+  resultCombine: {fileID: 0}
+--- !u!61 &787356412
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 787356409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.05, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 50, y: 44}
+    newSize: {x: 53, y: 38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.41, y: 38}
+  m_EdgeRadius: 0
+--- !u!212 &787356413
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 787356409}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: 043817d31b5b69c4680b3f37e1cc3c12, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 53, y: 38}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!1 &828479591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1365,9 @@ MonoBehaviour:
   - {fileID: 594049363}
   - {fileID: 1106155028}
   - {fileID: 1696775260}
-  questCompleted: 00000000000000
+  - {fileID: 235651470}
+  - {fileID: 1974266235}
+  questCompleted: 000000000000000000
   theDM: {fileID: 120256270}
   itemCollected: 
 --- !u!224 &828479593
@@ -1208,6 +1388,8 @@ RectTransform:
   - {fileID: 594049362}
   - {fileID: 1106155027}
   - {fileID: 1696775261}
+  - {fileID: 235651471}
+  - {fileID: 1974266234}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1250,7 +1432,10 @@ MonoBehaviour:
   iItemName: MetalBar
   collectedItem: 
   theGM: {fileID: 1838931806}
+  questNumber: 0
   canBeCombined: 0
+  itemToCombine: {fileID: 0}
+  resultCombine: {fileID: 0}
 --- !u!61 &874500920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1316,6 +1501,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!4 &874500922
 Transform:
   m_ObjectHideFlags: 0
@@ -1363,7 +1549,10 @@ MonoBehaviour:
   iItemName: Flint
   collectedItem: 
   theGM: {fileID: 1838931806}
-  canBeCombined: 0
+  questNumber: 7
+  canBeCombined: 1
+  itemToCombine: {fileID: 937687837}
+  resultCombine: {fileID: 787356411}
 --- !u!61 &896551961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1376,7 +1565,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.8, y: 0}
+  m_Offset: {x: 7.05, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1429,6 +1618,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!4 &896551963
 Transform:
   m_ObjectHideFlags: 0
@@ -1436,7 +1626,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 896551959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 74, z: -40.02353}
+  m_LocalPosition: {x: 2.22, y: 2.3, z: -40.02353}
   m_LocalScale: {x: 1.0512402, y: 1.1891816, z: 1.00059}
   m_Children: []
   m_Father: {fileID: 924096565}
@@ -1572,6 +1762,7 @@ MonoBehaviour:
   iItems:
   - {fileID: 874500919}
   - {fileID: 896551960}
+  - {fileID: 787356411}
   iItem: {fileID: 0}
   currentItem: 0
   isSelected: 0
@@ -1620,12 +1811,13 @@ RectTransform:
   m_Children:
   - {fileID: 874500922}
   - {fileID: 896551963}
+  - {fileID: 787356410}
   m_Father: {fileID: 1240908169}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92.4, y: -62.4}
+  m_AnchoredPosition: {x: 92, y: -61.3}
   m_SizeDelta: {x: 37.2, y: 37.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &924096566
@@ -1720,7 +1912,10 @@ MonoBehaviour:
   iItemName: Powder
   collectedItem: 
   theGM: {fileID: 1838931806}
+  questNumber: 7
   canBeCombined: 1
+  itemToCombine: {fileID: 896551960}
+  resultCombine: {fileID: 787356411}
 --- !u!61 &937687838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1786,6 +1981,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!1 &974677978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,6 +2099,7 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!4 &1026089701
 Transform:
   m_ObjectHideFlags: 0
@@ -1964,8 +2161,8 @@ MonoBehaviour:
   questNumber: 5
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
-  startText: Find combinations for the safe!
-  endText: You succesfully opened the safe and have acquired the Journal and Flint
+  startText: What could possibly be the combinations...?
+  endText: You succesfully opened the safe and have acquired the Journal and Flint.
   isItemQuest: 1
   targetItem: 
   needsOtherItemApplied: 0
@@ -1974,6 +2171,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!1 &1135064180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,7 +2564,6 @@ MonoBehaviour:
   - {fileID: 2138832007}
   - {fileID: 924096562}
   - {fileID: 233256521}
-  - {fileID: 0}
   iItemCollected: 
 --- !u!224 &1240908169
 RectTransform:
@@ -2423,7 +2620,10 @@ MonoBehaviour:
   iItemName: Journal
   collectedItem: 
   theGM: {fileID: 1838931806}
+  questNumber: 0
   canBeCombined: 0
+  itemToCombine: {fileID: 0}
+  resultCombine: {fileID: 0}
 --- !u!61 &1242120202
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2489,6 +2689,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!4 &1242120204
 Transform:
   m_ObjectHideFlags: 0
@@ -2598,6 +2799,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!114 &1268434639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2614,7 +2816,10 @@ MonoBehaviour:
   iItemName: Spoon
   collectedItem: 
   theGM: {fileID: 1838931806}
+  questNumber: 0
   canBeCombined: 0
+  itemToCombine: {fileID: 0}
+  resultCombine: {fileID: 0}
 --- !u!1 &1273770469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,7 +3070,7 @@ MonoBehaviour:
   questNumber: 3
   theQM: {fileID: 828479592}
   theGM: {fileID: 0}
-  startText: This looks like it could be unscrewed by something
+  startText: It's squeaking at night.
   endText: You have aquired the Metal Bar.
   isItemQuest: 1
   targetItem: MetalBar
@@ -2875,6 +3080,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!224 &1375024511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3003,6 +3209,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!224 &1439569915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3257,6 +3464,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!224 &1593360964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3305,7 +3513,7 @@ MonoBehaviour:
   questNumber: 6
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
-  startText: Pick up powder!
+  startText: Maybe I can use something to pry it out?
   endText: You have acquired the Gun Powder.
   isItemQuest: 1
   targetItem: Powder
@@ -3315,6 +3523,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!224 &1696775261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3373,6 +3582,7 @@ MonoBehaviour:
   pickedUp: 0
   used: 0
   solved: 0
+  combined: 0
 --- !u!224 &1750140982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3537,7 +3747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -148.3, y: -17.1}
+  m_AnchoredPosition: {x: -148.3, y: -17.099998}
   m_SizeDelta: {x: 24, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880643841
@@ -3770,6 +3980,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructionID: 1
+--- !u!1 &1974266233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1974266234}
+  - component: {fileID: 1974266235}
+  m_Layer: 5
+  m_Name: Quest8_USE_Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1974266234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974266233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 828479593}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 28.599998}
+  m_SizeDelta: {x: 320, y: 126.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1974266235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974266233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b54f7e1c1004e4cb31b078bee2b89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 8
+  theQM: {fileID: 828479592}
+  theGM: {fileID: 1838931806}
+  startText: I need something that can destroy the wall...
+  endText: THE OUTSIDE WORLD!!!!!
+  isItemQuest: 0
+  targetItem: Crack
+  needsOtherItemApplied: 1
+  otherItemValue: Explosives
+  isPuzzleQuest: 0
+  pickedUp: 0
+  used: 0
+  solved: 0
+  combined: 0
 --- !u!1 &1980003714
 GameObject:
   m_ObjectHideFlags: 0

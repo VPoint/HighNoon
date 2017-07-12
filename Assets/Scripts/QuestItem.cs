@@ -154,6 +154,8 @@ public class QuestItem : MonoBehaviour
             {
                 theDM.ShowBox("Whats the first item in the inventory do you wanna combine?");
                 Debug.Log("Whats the first item in the inventory do you wanna combine?");
+
+
             }
 
 
