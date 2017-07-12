@@ -41,3 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndStateWin.unity
     guid: f610ecf9484a66d4db9359608dde2454
+  - enabled: 1
+    path: Assets/Scenes/Safe.unity
+    guid: 4a9bfe31cce9147418309561fbf4a914

@@ -29,6 +29,7 @@ public class GameModel : MonoBehaviour {
         }
 
         currState = State.INSPECT;
+
     }
 	
 	// Update is called once per frame

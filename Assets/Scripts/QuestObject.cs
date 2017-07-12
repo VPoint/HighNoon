@@ -21,8 +21,11 @@ public class QuestObject : MonoBehaviour
     public string otherItemValue;
     public static string lastTargetItem;
 
+    public bool isPuzzleQuest;
+
     public bool pickedUp;
     public bool used;
+    public bool solved;
 
 
     // Use this for initialization
@@ -61,6 +64,11 @@ public class QuestObject : MonoBehaviour
                 EndQuest();
             }
 
+        }
+
+        if (solved)
+        {
+            EndQuest();
         }
 
     }
