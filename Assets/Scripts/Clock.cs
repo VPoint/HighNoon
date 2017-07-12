@@ -5,12 +5,12 @@ using UnityEngine.UI;
 using System;
 
 public class Clock : MonoBehaviour {
-	Timer time;
+	private Timer time;
 	public Text cText;
+	private static bool cExists;
 	// Use this for initialization
 	void Start () {
 		time = FindObjectOfType<Timer>();
-		cText = FindObjectOfType<Text>();
 	}
 	
 	// Update is called once per frame
@@ -23,5 +23,7 @@ public class Clock : MonoBehaviour {
 		} else {
 			cText.text = min.ToString() + ":" + sec.ToString();
 		}
+		
+		//Debug.Log(cText.text);
 	}
 }
