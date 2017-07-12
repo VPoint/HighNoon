@@ -26,7 +26,7 @@ public class GameModel : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        currState = State.INSPECT;
+        //currState = State.INSPECT;
 
         // set timer
         // reset score to zero

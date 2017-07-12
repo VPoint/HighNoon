@@ -29,7 +29,11 @@ public class InventoryBox : MonoBehaviour
     public void ShowItem(string itemName)
     {
         gameObject.SetActive(true);
-        iItem.gameObject.SetActive(true);
+
+        for(int i=0; i<iItems.Length; i++) { 
+            if(iItems[i].iItemName == itemName)
+                iItems[i].gameObject.SetActive(true);
+        }
     }
 
     public void DesactiveBox()
