@@ -36,5 +36,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Ground.unity
     guid: d4c42e19a9342b44fb4e80964e1eeb84
   - enabled: 1
+    path: Assets/Scenes/EndStateLose.unity
+    guid: 41d27e80e628bff4297d0946ca4ebb44
+  - enabled: 1
+    path: Assets/Scenes/EndStateWin.unity
+    guid: f610ecf9484a66d4db9359608dde2454
+  - enabled: 1
     path: Assets/Scenes/Safe.unity
     guid: 4a9bfe31cce9147418309561fbf4a914

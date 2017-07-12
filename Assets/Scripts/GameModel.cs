@@ -12,6 +12,8 @@ public class GameModel : MonoBehaviour {
     private InventoryItem[] iItems = new InventoryItem[3];
     public InventoryBox[] iBoxes;
     private static bool gmExists;
+	
+	private bool active;
 
     // Use this for initialization
     void Start () {
@@ -26,18 +28,15 @@ public class GameModel : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        //currState = State.INSPECT;
+        currState = State.INSPECT;
 
-        // set timer
-        // reset score to zero
     }
 	
 	// Update is called once per frame
 	void Update () {
-		// decrement timer
-		// update score
+		
 	}
-
+	
 	public void SetState(int i){
 		switch(i){
 			case 1:
@@ -110,4 +109,19 @@ public class GameModel : MonoBehaviour {
 		//	// display inventory full message
 		//}
 	}
+	 
+	public void deactivateModel(){
+		if(active){
+			gameObject.SetActive(!active);
+			active = false;
+		}
+	}
+	
+	public void activateModel(){
+		if(!active){
+			gameObject.SetActive(!active);
+			active = true;
+		}
+	}
+
 }
