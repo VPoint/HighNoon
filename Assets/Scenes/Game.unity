@@ -1968,8 +1968,8 @@ MonoBehaviour:
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
   startText: Find combinations for the safe!
-  endText: You have acquired the journal and flint
-  isItemQuest: 0
+  endText: You succesfully opened the safe and have acquired the Journal and Flint
+  isItemQuest: 1
   targetItem: 
   needsOtherItemApplied: 0
   otherItemValue: 
@@ -2871,7 +2871,7 @@ MonoBehaviour:
   theQM: {fileID: 828479592}
   theGM: {fileID: 0}
   startText: This looks like it could be unscrewed by something
-  endText: You have aquired the Metal Bar!
+  endText: You have aquired the Metal Bar.
   isItemQuest: 1
   targetItem: MetalBar
   needsOtherItemApplied: 0
@@ -2998,7 +2998,7 @@ MonoBehaviour:
   questNumber: 0
   theQM: {fileID: 828479592}
   theGM: {fileID: 0}
-  startText: I wonder if there's something I can use here
+  startText: I wonder if there's something I can use here...
   endText: You have aquired the Spoon.
   isItemQuest: 1
   targetItem: Spoon
@@ -3311,7 +3311,7 @@ MonoBehaviour:
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
   startText: Pick up powder!
-  endText: You have acquired gun powder.
+  endText: You have acquired the Gun Powder.
   isItemQuest: 1
   targetItem: Powder
   needsOtherItemApplied: 0
