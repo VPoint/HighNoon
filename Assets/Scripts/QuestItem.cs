@@ -129,6 +129,7 @@ public class QuestItem : MonoBehaviour
                         theIM.iBoxes[iBoxNumber].gameObject.SetActive(false);
                         theIM.iBoxes[iBoxNumber].isSelected = false;
                         theIM.iBoxes[iBoxNumber].GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
+                        theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].gameObject.SetActive(false);
                         gameObject.SetActive(false);
                         //Destroy(gameObject);
 
