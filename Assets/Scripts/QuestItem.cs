@@ -77,15 +77,6 @@ public class QuestItem : MonoBehaviour
 
             if (theGM.currState == GameModel.State.PICKUP)
             {
-                //if (needsOtherItemApplied && theIM.iBoxes[iBoxNumber].iItem.iItemName != otherItemValue) {
-                //if (needsOtherItemApplied)
-                //{
-
-                //    ShowItemDescription();
-                //    Debug.Log("something");
-                //}
-                //else
-                //{
                 theDM.ShowBox("What item do you wanna pick up?");
                 Debug.Log("What item do you wanna pick up?");
 
@@ -104,7 +95,6 @@ public class QuestItem : MonoBehaviour
                     }
                         
                 }
-                //}
                 else
                 {
                     theDM.ShowBox("The item you selected is not a pickable item!");
@@ -186,7 +176,6 @@ public class QuestItem : MonoBehaviour
 
     public void ShowItemDescription()
     {
-        //es added
         //Debug.Log("show description!!");
         theDM.dialogLines = theDH.dialogueLines;
         theDM.currentLine = 0;

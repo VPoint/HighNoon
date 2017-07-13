@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 	
 	private GameModel theGM;
 	private InventoryManager theIM;
+	private QuestManager theQM;
 	private static bool gcExists;
 	
 	// Use this for initialization
@@ -17,6 +18,7 @@ public class GameController : MonoBehaviour {
             gcExists = true;
 			theGM = FindObjectOfType<GameModel>();
 			theIM = FindObjectOfType<InventoryManager>();
+			theQM = FindObjectOfType<QuestManager>();
             DontDestroyOnLoad(transform.gameObject);
         }
         else
@@ -38,6 +40,12 @@ public class GameController : MonoBehaviour {
 			theGM.activateModel();
 			theIM.activateInventory();
 		}
+		
+		if(theQM.questCompleted[theQM.questCompleted.Length - 1]){
+			// if last quest completed, player has won
+			playerHasWon();
+		}
+		
 		if (gameWon)
 		 {
 			 Application.LoadLevel("EndStateWin");
@@ -63,5 +71,10 @@ public class GameController : MonoBehaviour {
 	 void timeHasElapsed()
 	 {
 		 timeElapsed = true;
+	 }
+	 
+	 void playerHasWon()
+	 {
+		 gameWon = true;
 	 }
 }
