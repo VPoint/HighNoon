@@ -367,8 +367,6 @@ MonoBehaviour:
   endText: You removed the screws.
   isItemQuest: 0
   targetItem: Screws
-  needsOtherItemApplied: 1
-  otherItemValue: Spoon
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -542,8 +540,6 @@ MonoBehaviour:
   endText: You have acquired the Explosives.
   isItemQuest: 0
   targetItem: Powder
-  needsOtherItemApplied: 0
-  otherItemValue: 
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -983,8 +979,6 @@ MonoBehaviour:
   endText: You see a hole!
   isItemQuest: 0
   targetItem: Screw2
-  needsOtherItemApplied: 1
-  otherItemValue: MetalBar
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -1329,7 +1323,6 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &828479591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1494,6 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!4 &874500922
 Transform:
   m_ObjectHideFlags: 0
@@ -1618,7 +1610,6 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!4 &896551963
 Transform:
   m_ObjectHideFlags: 0
@@ -1981,7 +1972,6 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &974677978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2089,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!4 &1026089701
 Transform:
   m_ObjectHideFlags: 0
@@ -2165,8 +2154,6 @@ MonoBehaviour:
   endText: You succesfully opened the safe and have acquired the Journal and Flint.
   isItemQuest: 1
   targetItem: 
-  needsOtherItemApplied: 0
-  otherItemValue: 
   isPuzzleQuest: 1
   pickedUp: 0
   used: 0
@@ -2689,7 +2676,6 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!4 &1242120204
 Transform:
   m_ObjectHideFlags: 0
@@ -2799,7 +2785,6 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!114 &1268434639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3074,8 +3059,6 @@ MonoBehaviour:
   endText: You have aquired the Metal Bar.
   isItemQuest: 1
   targetItem: MetalBar
-  needsOtherItemApplied: 0
-  otherItemValue: 
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -3203,8 +3186,6 @@ MonoBehaviour:
   endText: You have aquired the Spoon.
   isItemQuest: 1
   targetItem: Spoon
-  needsOtherItemApplied: 0
-  otherItemValue: 
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -3458,8 +3439,6 @@ MonoBehaviour:
   endText: Get the metal bar next!
   isItemQuest: 0
   targetItem: Screw1
-  needsOtherItemApplied: 1
-  otherItemValue: Spoon
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -3517,8 +3496,6 @@ MonoBehaviour:
   endText: You have acquired the Gun Powder.
   isItemQuest: 1
   targetItem: Powder
-  needsOtherItemApplied: 0
-  otherItemValue: 
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -3576,8 +3553,6 @@ MonoBehaviour:
   endText: Get the right screw!
   isItemQuest: 0
   targetItem: Screw1
-  needsOtherItemApplied: 1
-  otherItemValue: Spoon
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0
@@ -4032,8 +4007,6 @@ MonoBehaviour:
   endText: THE OUTSIDE WORLD!!!!!
   isItemQuest: 0
   targetItem: Crack
-  needsOtherItemApplied: 1
-  otherItemValue: Explosives
   isPuzzleQuest: 0
   pickedUp: 0
   used: 0

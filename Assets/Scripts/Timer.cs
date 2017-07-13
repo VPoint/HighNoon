@@ -45,7 +45,7 @@ public class Timer : MonoBehaviour {
 	 }
 	 
 	 void pauseTimer(){
-		 active = true;
+		 active = false;
 	 }
 	 
 	 public float getTime(){
