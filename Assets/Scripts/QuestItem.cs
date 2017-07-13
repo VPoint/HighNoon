@@ -117,7 +117,9 @@ public class QuestItem : MonoBehaviour
                 theDM.ShowBox("What item do you wanna use?");
                 Debug.Log("What item do you wanna use ? ");
 
-                if (theIM.iBoxes[iBoxNumber].isSelected && theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName == otherItemValue)
+                if (theIM.iBoxes[iBoxNumber].isSelected && 
+                    theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName == otherItemValue &&
+                    theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].gameObject.activeSelf)
                 {
                     theDM.ShowBox("And where to apply this item? Choose an item on the screen");
                     Debug.Log("And where to apply this item? Choose an item on the screen");
@@ -126,10 +128,16 @@ public class QuestItem : MonoBehaviour
                     Debug.Log("all rq QItem" + allRq);
                     if (allRq == true)
                     {
+                        // after use 
+                        // The inventory box needs to be inactive, unselected and turns back to original color
                         theIM.iBoxes[iBoxNumber].gameObject.SetActive(false);
                         theIM.iBoxes[iBoxNumber].isSelected = false;
                         theIM.iBoxes[iBoxNumber].GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
+
+                        // the item used in the inventory needs to be inactive
                         theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].gameObject.SetActive(false);
+
+                        // the quest item applied needs to becom inactive
                         gameObject.SetActive(false);
                         //Destroy(gameObject);
 
@@ -155,15 +163,9 @@ public class QuestItem : MonoBehaviour
                 theDM.ShowBox("Whats the first item in the inventory do you wanna combine?");
                 Debug.Log("Whats the first item in the inventory do you wanna combine?");
 
-
             }
 
-
-
         }
-        
-
-
 
     }
 

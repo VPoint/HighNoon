@@ -26,7 +26,6 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-
     }
 
     // Update is called once per frame

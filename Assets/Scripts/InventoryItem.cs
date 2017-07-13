@@ -77,6 +77,7 @@ public class InventoryItem : MonoBehaviour
                     // make the result item appreas
                     resultCombine.gameObject.SetActive(true);
                     SetItemsCombined(theQM.quests[questNumber]);
+                    //theGM.currState = GameModel.State.NONE;
                 }
 
             }
@@ -89,29 +90,11 @@ public class InventoryItem : MonoBehaviour
 
     }
 
-    void OnMouseDown()
-    {
-        
-        
-
-    }
-
     public void SetItemsCombined(QuestObject qo)
     {
         qo.combined = true;
     }
 
-    //public int FindiBoxNumber(string itemName)
-    //{
-    //    for (int i = 0; i < theIM.iBoxes.Length; i++)
-    //    {
-    //        for(int j=0; j<theIM.iBoxes[i].iItems.Length; j++) {
-    //            if (theIM.iBoxes[i].iItems[j].iItemName == itemName)
-    //                return i;
-    //        }
-    //    }
-    //    return -1;
-    //}
 
 
 }

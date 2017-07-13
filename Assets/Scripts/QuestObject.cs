@@ -17,10 +17,6 @@ public class QuestObject : MonoBehaviour
     public bool isItemQuest;
     public string targetItem;
 
-    public bool needsOtherItemApplied;
-    public string otherItemValue;
-    public static string lastTargetItem;
-
     public bool isPuzzleQuest;
 
     public bool pickedUp;
@@ -44,7 +40,6 @@ public class QuestObject : MonoBehaviour
             //Debug.Log("current collected" + theQM.itemCollected.ToString());
             if (theQM.itemCollected == targetItem)
             {
-                lastTargetItem = targetItem;
                 theQM.itemCollected = null;
 
                 Debug.Log("Arrived here1");
@@ -54,19 +49,11 @@ public class QuestObject : MonoBehaviour
             }
 
         }
-        if (needsOtherItemApplied && used)
+        //if (needsOtherItemApplied && used)
+        if (used)
         {
-            
-            theQM.itemCollected = lastTargetItem;
-            Debug.Log("Item Collected " + theQM.itemCollected);
-            Debug.Log("Last Target Item " + lastTargetItem);
-            Debug.Log("Other Item Value " + otherItemValue);
 
-            if (theQM.itemCollected == otherItemValue)
-            {
-                theQM.itemCollected = null;
-                EndQuest();
-            }
+            EndQuest();
 
         }
 
@@ -82,21 +69,6 @@ public class QuestObject : MonoBehaviour
 
     }
 
-    //public bool allRqCompleted()
-    //{
-    //    if(questNumber == 0)
-    //    {
-    //        return true;
-    //    }
-    //    else { 
-    //        for (int i = 0; i < preRq.Length; i++)
-    //        {
-    //            if (theQM.questCompleted[preRq[i]] == false)
-    //                return false;
-    //        }
-    //            return true;
-    //    }
-    //}
 
     public void StartQuest()
     {
