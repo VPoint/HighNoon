@@ -47,3 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Crack.unity
     guid: 0a13b96a60e8ce94a9add7c6d286cc29
+  - enabled: 1
+    path: Assets/Scenes/HighScoreScene.unity
+    guid: b033bd59acec0c14f95e2a998e997818
