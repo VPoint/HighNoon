@@ -11,18 +11,17 @@ public class QuestManager : MonoBehaviour
     public DialogueManager theDM;
 
     public string itemCollected;
+	public bool finalQuestComplete = false;
 
     private static bool qmExists;
 
     // Use this for initialization
     void Start()
     {
-        
-        questCompleted = new bool[quests.Length];
-
         if (!qmExists)
         {
             qmExists = true;
+			questCompleted = new bool[quests.Length];
             DontDestroyOnLoad(transform.gameObject);
         }
         else
@@ -37,6 +36,11 @@ public class QuestManager : MonoBehaviour
     {
         theDM = FindObjectOfType<DialogueManager>();
 
+		if(questCompleted[questCompleted.Length - 1]){
+			// if last quest completed, player has won
+			Debug.Log("Final Quest Complete");
+			finalQuestComplete = true;
+		}
     }
 
     public void ShowQuestText(string questText)
@@ -50,4 +54,9 @@ public class QuestManager : MonoBehaviour
         //es removed
         theDM.ShowDialog();
     }
+	
+	public void resetManager(){
+		qmExists = false;
+		Destroy(gameObject);
+	}
 }

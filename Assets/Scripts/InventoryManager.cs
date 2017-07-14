@@ -34,6 +34,12 @@ public class InventoryManager : MonoBehaviour
 
     }
 	
+	public void resetManager(){
+		imExists = false;
+		iBoxes = null;
+		Destroy(gameObject);
+	}
+	
 	public void deactivateInventory(){
 		if(active){
 			gameObject.SetActive(!active);

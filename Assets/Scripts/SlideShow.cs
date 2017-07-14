@@ -4,12 +4,11 @@
  
  public class SlideShow : MonoBehaviour
  {
-     public Sprite[] slides = new Sprite[4];
+     public Sprite[] slides = new Sprite[7];
 	 public SpriteRenderer image;
      public Button nextButton;
 	 public Button prevButton;
      private int currentSlide = 0;
-     private float timeSinceLast = 1.0f;
      
      void Start()
      {		 

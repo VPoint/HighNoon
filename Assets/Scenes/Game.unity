@@ -1360,9 +1360,10 @@ MonoBehaviour:
   - {fileID: 1696775260}
   - {fileID: 235651470}
   - {fileID: 1974266235}
-  questCompleted: 000000000000000000
+  questCompleted: 000001000000000000
   theDM: {fileID: 120256270}
   itemCollected: 
+  finalQuestComplete: 0
 --- !u!224 &828479593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2013,7 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fb2a566232a38429f9176b5eb74f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 360
+  timeRemaining: 10
   active: 1
 --- !u!224 &974677981
 RectTransform:
@@ -3687,7 +3688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
-  iBoxes: []
 --- !u!1 &1880643839
 GameObject:
   m_ObjectHideFlags: 0
