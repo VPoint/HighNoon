@@ -23,8 +23,4 @@ public class Settings : MonoBehaviour {
 		
 		control.setGameMode(gameMode.isOn);
 	}
-	
-	void changeGameMode(){
-		
-	}
 }

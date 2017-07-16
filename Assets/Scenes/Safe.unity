@@ -143,8 +143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: 42}
-  m_SizeDelta: {x: 92, y: 120}
+  m_AnchoredPosition: {x: 126, y: 43}
+  m_SizeDelta: {x: 82, y: 106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &92072793
 MonoBehaviour:
@@ -288,8 +288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: 42}
-  m_SizeDelta: {x: 92, y: 120}
+  m_AnchoredPosition: {x: 15, y: 43}
+  m_SizeDelta: {x: 93, y: 106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98283035
 MonoBehaviour:
@@ -541,7 +541,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &215975845
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +610,6 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &283313683
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,10 +800,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 50
+  m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 320, y: 180}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1033,10 +1031,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 50
+  m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 320, y: 180}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1564,7 +1562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5.1}
+  m_AnchoredPosition: {x: 0, y: -5.1000004}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520254697
@@ -1636,8 +1634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: 42}
-  m_SizeDelta: {x: 91, y: 120}
+  m_AnchoredPosition: {x: -98, y: 43}
+  m_SizeDelta: {x: 89, y: 106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545948709
 MonoBehaviour:
@@ -1834,7 +1832,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &1696171872
 GameObject:
   m_ObjectHideFlags: 0

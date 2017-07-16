@@ -504,7 +504,6 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!4 &1055972245
 Transform:
   m_ObjectHideFlags: 0
@@ -550,8 +549,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 170}
+  m_AnchoredPosition: {x: 2.8, y: -0.2}
+  m_SizeDelta: {x: 266, y: 158.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122440566
 MonoBehaviour:
@@ -573,24 +572,24 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 94959e25289f901428be60f0a23da93b, type: 3}
-    m_FontSize: 6
+    m_Font: {fileID: 12800000, guid: a414eb7c032bb584e848a778f77508cd, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0.75
-  m_Text: "LONE CREEK HAS ALWAYS BEEN A PEACEFUL TOWN. THIS ALL CHANGED A FEW MONTHS
-    AGO. YOU ARE A REPORTER HOPING TO GET MORE INFORMATION FROM THE MAYOR ON THE TOWN\u2019S
-    RECENT MURDERS. HOWEVER, THERE HAS BEEN AN UNEXPECTED TURN IN EVENTS. THE MAYOR
-    IS DEAD IN HIS OFFICE UPON YOUR ARRIVAL; A SINGLE BULLET THROUGH THE HEAD. YOU
-    ARE PROMPTLY ARRESTED FOR HIS MURDER AND SCHEDULED TO HANG AT HIGH NOON. CAN YOU
-    ESCAPE IN TIME AND UNCOVER THE TRUTH?"
+    m_LineSpacing: 1
+  m_Text: "Lone creek has always been a peaceful town. This all changed a few months
+    ago. You are a reporter hoping to get more information from the mayor on the town\u2019s
+    recent murders. However, there has been an unexpected turn in events. The mayor
+    is dead in his office upon your arrival; a single bullet through the head. You
+    are promptly arrested for his murder and scheduled to hang at high noon. Can you
+    escape in time and uncover the truth?"
 --- !u!222 &1122440567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -794,10 +793,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 50
+  m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 320, y: 180}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
