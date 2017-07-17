@@ -33,6 +33,8 @@ public class InventoryBox : MonoBehaviour
         for(int i=0; i<iItems.Length; i++) { 
             if(iItems[i].iItemName == itemName)
                 iItems[i].gameObject.SetActive(true);
+				iItems[i].GetComponent<UnityEngine.UI.Image>().enabled = true;
+				//GetComponent<UnityEngine.UI.Image>().color = Color.blue;
         }
     }
 

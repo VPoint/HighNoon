@@ -587,8 +587,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 62d9b04e-f488-4712-9124-fca09585b9d6
-  projectName: HighNoon (2)
-  organizationId: jacqui35
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNewInputSystem: 0
