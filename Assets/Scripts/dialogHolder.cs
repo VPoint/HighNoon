@@ -29,13 +29,13 @@ public class dialogHolder : MonoBehaviour
 
         //Debug.Log("Mouse down method");
 
-        if (!dMan.dialogActive)
-        {
+        //if (!dMan.dialogActive)
+        //{
             //Debug.Log("Mouse down method activated");
             dMan.dialogLines = dialogueLines;
             dMan.currentLine = 0;
             dMan.ShowDialog();
-        }
+        //}
 
     }
 }

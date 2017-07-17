@@ -7,6 +7,7 @@ public class QuestObject : MonoBehaviour
 {
 
     public int questNumber;
+    public QuestTrigger[] questsToBeTrig;
 
     public QuestManager theQM;
     public GameModel theGM;
@@ -24,11 +25,13 @@ public class QuestObject : MonoBehaviour
     public bool solved;
     public bool combined;
 
+    public QuestItem nextQuestButton;
+
 
     // Use this for initialization
     void Start()
     {
-
+        nextQuestButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,6 +47,8 @@ public class QuestObject : MonoBehaviour
 
                 Debug.Log("Arrived here1");
 
+                TrigNextQuests(questsToBeTrig);
+
                 EndQuest();
                 Debug.Log("Arrived here2");
             }
@@ -53,17 +58,22 @@ public class QuestObject : MonoBehaviour
         if (used)
         {
 
+            TrigNextQuests(questsToBeTrig);
             EndQuest();
 
         }
+      
 
         if (solved)
         {
+            TrigNextQuests(questsToBeTrig);
             EndQuest();
         }
 
         if (combined)
         {
+
+            TrigNextQuests(questsToBeTrig);
             EndQuest();
         }
 
@@ -72,7 +82,9 @@ public class QuestObject : MonoBehaviour
 
     public void StartQuest()
     {
-        theQM.ShowQuestText(startText);
+        if(startText != null || startText != "") { 
+            theQM.ShowQuestText(startText);
+        }
     }
 
     public void EndQuest()
@@ -80,5 +92,13 @@ public class QuestObject : MonoBehaviour
         theQM.ShowQuestText(endText);
         theQM.questCompleted[questNumber] = true;
         gameObject.SetActive(false);
+    }
+
+    public void TrigNextQuests(QuestTrigger[] qts)
+    {
+        for(int i=0; i<qts.Length; i++)
+        {
+            qts[i].startQuest = true;
+        }
     }
 }

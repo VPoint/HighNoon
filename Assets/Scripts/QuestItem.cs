@@ -27,6 +27,8 @@ public class QuestItem : MonoBehaviour
 
     public bool canBePicked;
 
+    
+
 
 
 
@@ -157,6 +159,110 @@ public class QuestItem : MonoBehaviour
 
         }
 
+    }
+
+    public void fire()
+    {
+        if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
+        {
+            Debug.Log("Mouse down method activated");
+            theQM.itemCollected = itemName;
+            theIM.iItemCollected = itemName;
+            Debug.Log("Item collected" + theQM.itemCollected.ToString());
+            Debug.Log("The GM curr state " + theGM.currState);
+
+            if (theGM.currState == GameModel.State.PICKUP)
+            {
+                //if (needsOtherItemApplied && theIM.iBoxes[iBoxNumber].iItem.iItemName != otherItemValue) {
+                //if (needsOtherItemApplied)
+                //{
+
+                //    ShowItemDescription();
+                //    Debug.Log("something");
+                //}
+                //else
+                //{
+                theDM.ShowBox("What item do you wanna pick up?");
+                Debug.Log("What item do you wanna pick up?");
+
+                if (canBePicked)
+                {
+                    bool allRq = allRqCompleted();
+                    Debug.Log("all rq QItem" + allRq);
+                    if (allRq == true)
+                    {
+                        theIM.iBoxes[iBoxNumber].isSelected = false;
+                        theIM.iBoxes[iBoxNumber].GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
+                        theIM.iBoxes[iBoxNumber].ShowItem(itemName);
+                        gameObject.SetActive(false);
+                        Destroy(gameObject);
+
+                        SetItemPickedUp(theQM.quests[questNumber]);
+                    }
+
+                }
+                //}
+                else
+                {
+                    theDM.ShowBox("The item you selected is not a pickable item!");
+                    Debug.Log("The item you selected is not a pickable item!");
+                }
+            }
+
+            if (theGM.currState == GameModel.State.USE)
+            {
+                theDM.ShowBox("What item do you wanna use?");
+                Debug.Log("What item do you wanna use ? ");
+
+                if (theIM.iBoxes[iBoxNumber].isSelected &&
+                    theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName == otherItemValue &&
+                    theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].gameObject.activeSelf)
+                {
+                    theDM.ShowBox("And where to apply this item? Choose an item on the screen");
+                    Debug.Log("And where to apply this item? Choose an item on the screen");
+
+                    bool allRq = allRqCompleted();
+                    Debug.Log("all rq QItem" + allRq);
+                    if (allRq == true)
+                    {
+                        // after use 
+                        // The inventory box needs to be inactive, unselected and turns back to original color
+                        theIM.iBoxes[iBoxNumber].gameObject.SetActive(false);
+                        theIM.iBoxes[iBoxNumber].isSelected = false;
+                        theIM.iBoxes[iBoxNumber].GetComponent<UnityEngine.UI.Image>().color = new Color32(228, 207, 192, 255);
+
+                        // the item used in the inventory needs to be inactive
+                        theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].gameObject.SetActive(false);
+
+                        // the quest item applied needs to becom inactive
+                        gameObject.SetActive(false);
+                        //Destroy(gameObject);
+
+                        SetItemUsed(theQM.quests[questNumber]);
+
+                        theDM.ShowBox("You used the item " + theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName);
+                        Debug.Log("You used the item " + theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName);
+
+                    }
+                }
+            }
+
+            if (theGM.currState == GameModel.State.INSPECT)
+            {
+                theDM.ShowBox("What item do you wanna inspect?");
+                Debug.Log("What item do you wanna inspect?");
+
+                ShowItemDescription();
+            }
+
+            if (theGM.currState == GameModel.State.COMBINE)
+            {
+                theDM.ShowBox("Whats the first item in the inventory do you wanna combine?");
+                Debug.Log("Whats the first item in the inventory do you wanna combine?");
+
+            }
+
+        }
     }
 
     public void SetItemPickedUp(QuestObject qo)

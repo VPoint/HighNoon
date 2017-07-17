@@ -33,12 +33,15 @@ public class GameModel : MonoBehaviour {
 	public void SetState(int i){
 		switch(i){
 			case 1:
-				currState = State.USE;
+				currState = State.INSPECT;
 			break;
 			case 2:
-				currState = State.PICKUP;
+				currState = State.USE;
 			break;
 			case 3:
+				currState = State.PICKUP;
+			break;
+			case 4:
 				currState = State.COMBINE;
 			break;
 			default:

@@ -12,39 +12,58 @@ public class QuestTrigger : MonoBehaviour
     public bool startQuest;
     public bool endQuest;
 
+
     void Start()
     {
         theQM = FindObjectOfType<QuestManager>();
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!theQM.questCompleted[questNumber])
+        {
+            //Debug.Log("Mouse down method activated");
+            if (startQuest && !theQM.quests[questNumber].gameObject.activeSelf)
+            {
+                theQM.quests[questNumber].gameObject.SetActive(true);
+                theQM.quests[questNumber].StartQuest();
 
+                //es added
+                Destroy(gameObject);
+            }
+
+            if (endQuest && theQM.quests[questNumber].gameObject.activeSelf)
+            {
+                theQM.quests[questNumber].EndQuest();
+            }
+
+        }
     }
 
     void OnMouseDown()
     {
 
-            if (!theQM.questCompleted[questNumber])
-            {
-                //Debug.Log("Mouse down method activated");
-                if (startQuest && !theQM.quests[questNumber].gameObject.activeSelf)
-                {
-                    theQM.quests[questNumber].gameObject.SetActive(true);
-                    theQM.quests[questNumber].StartQuest();
+            //if (!theQM.questCompleted[questNumber])
+            //{
+            //    //Debug.Log("Mouse down method activated");
+            //    if (startQuest && !theQM.quests[questNumber].gameObject.activeSelf)
+            //    {
+            //        theQM.quests[questNumber].gameObject.SetActive(true);
+            //        theQM.quests[questNumber].StartQuest();
 
-                    //es added
-                    //Destroy(gameObject);
-                }
+            //        //es added
+            //        Destroy(gameObject);
+            //    }
 
-                if (endQuest && theQM.quests[questNumber].gameObject.activeSelf)
-                {
-                    theQM.quests[questNumber].EndQuest();
-                }
+            //    if (endQuest && theQM.quests[questNumber].gameObject.activeSelf)
+            //    {
+            //        theQM.quests[questNumber].EndQuest();
+            //    }
 
-        }
+            //}
 
         
 
