@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class InventoryBox : MonoBehaviour
+public class InventoryBox : MonoBehaviour, IPointerDownHandler
 {
 
     public int boxNumber;
@@ -33,6 +34,8 @@ public class InventoryBox : MonoBehaviour
         for(int i=0; i<iItems.Length; i++) { 
             if(iItems[i].iItemName == itemName)
                 iItems[i].gameObject.SetActive(true);
+				//iItems[i].GetComponent<UnityEngine.UI.Image>().enabled = true;
+				//GetComponent<UnityEngine.UI.Image>().color = Color.blue;
         }
     }
 
@@ -44,7 +47,7 @@ public class InventoryBox : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void OnMouseDown()
+    public void OnPointerDown (PointerEventData eventData)
     {
         Debug.Log("Got clicked");
         if (!isSelected) {
@@ -61,6 +64,5 @@ public class InventoryBox : MonoBehaviour
             isSelected = false;
         }
     }
-
 
 }
