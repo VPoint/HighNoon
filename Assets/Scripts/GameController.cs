@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 	public bool timeElapsed = false;
 	public bool gameWon = false;
-	private bool gameEasy = false;
+	public bool gameEasy = false;
 	
 	private GameModel theGM;
 	private InventoryManager theIM;

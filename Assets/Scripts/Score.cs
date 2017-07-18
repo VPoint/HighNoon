@@ -14,9 +14,9 @@ public class Score : Text {
 		double sec = (gm.gameTime - min*60);
 		
 		if(gm.gameEasy){
-			text = "You escaped!"
+			text = "You escaped!";
 		} else {
-			text = "You escaped in:\n" min.ToString() + "min" + sec.ToString() + "sec";
+			text = "You escaped in:\n" + min.ToString() + "min" + sec.ToString() + "sec";
 		}
 	}
 	
