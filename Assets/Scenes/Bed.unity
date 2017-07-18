@@ -1210,7 +1210,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!61 &1256037790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1347,7 +1346,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!61 &1352919479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1475,7 +1473,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &1471637355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,8 +1596,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138.3, y: 67.3}
-  m_SizeDelta: {x: 50, y: 30}
+  m_AnchoredPosition: {x: -138.3, y: 69.7}
+  m_SizeDelta: {x: 28, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1484650863
 MonoBehaviour:
@@ -2040,7 +2037,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &1782667190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,7 +2260,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &2024718601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,7 +2424,6 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &2141052644
 GameObject:
   m_ObjectHideFlags: 0

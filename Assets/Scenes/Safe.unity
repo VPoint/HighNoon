@@ -615,7 +615,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &215975845
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +684,6 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &283313683
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +891,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -137.9, y: 67.9}
-  m_SizeDelta: {x: 48, y: 41}
+  m_SizeDelta: {x: 28, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506415313
 MonoBehaviour:
@@ -1897,7 +1895,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!1 &1930928395
 GameObject:
   m_ObjectHideFlags: 0
