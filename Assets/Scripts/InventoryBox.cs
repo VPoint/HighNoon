@@ -7,7 +7,7 @@ public class InventoryBox : MonoBehaviour, IPointerDownHandler
 {
 
     public int boxNumber;
-
+	
     public InventoryItem[] iItems;
     public InventoryItem iItem;
     public int currentItem;
@@ -32,7 +32,18 @@ public class InventoryBox : MonoBehaviour, IPointerDownHandler
     // Update is called once per frame
     void Update()
     {
-
+		if(FindObjectOfType<DialogueManager>() != null){
+			theDM = FindObjectOfType<DialogueManager>();
+		}
+		
+		if(theGM.currState == GameModel.State.COMBINE){
+			// if combine look for the enabled combine result.
+		   for(int i=0; i<iItems.Length; i++) { 
+				if(iItems[i].gameObject.activeInHierarchy){
+					iItem = iItems[i];
+				}
+			}
+		}
     }
 
     public void ShowItem(string itemName)
@@ -40,8 +51,10 @@ public class InventoryBox : MonoBehaviour, IPointerDownHandler
         gameObject.SetActive(true);
 
         for(int i=0; i<iItems.Length; i++) { 
-            if(iItems[i].iItemName == itemName)
+            if(iItems[i].iItemName == itemName){
                 iItems[i].gameObject.SetActive(true);
+				iItem = iItems[i];
+			}
 				//iItems[i].GetComponent<UnityEngine.UI.Image>().enabled = true;
 				//GetComponent<UnityEngine.UI.Image>().color = Color.blue;
         }
@@ -58,43 +71,43 @@ public class InventoryBox : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown (PointerEventData eventData)
     {
         
-
-
         Debug.Log("Got clicked");
         if (!isSelected) {
-
-            //if (gameObject.activeSelf)
-            //{
-            //    if (theGM.currState == GameModel.State.PICKUP)
-            //    {
-            //        theDM.ShowBox("This item is already picked up.");
-            //        Debug.Log("This item is already picked up.");
-
-            //    }
-            //    else if (theGM.currState == GameModel.State.USE)
-            //    {
-            //        theDM.ShowBox("Where to apply this item? Choose an item on the screen.");
-            //        Debug.Log("Where to apply this item? Choose an item on the screen.");
-
-            //    }
-            //    else
-            //    {
-            //        for (int i = 0; i < iItems.Length; i++)
-            //        {
-            //            if (iItems[i].gameObject.activeSelf)
-            //            {
-            //                theDM.ShowBox(dialogueLines[i]);
-            //            }
-            //        }
-
-            //    }
-            //}
-
             Debug.Log("!isSelected");
             GetComponent<UnityEngine.UI.Image>().color = new Color32(112, 28, 28, 255); ;
             isSelected = true;
 
-            
+            if (gameObject.activeSelf)
+            {
+               if (theGM.currState == GameModel.State.PICKUP)
+               {
+                   theDM.ShowBox("This item is already picked up.");
+                   Debug.Log("This item is already picked up.");
+
+               }
+               else if (theGM.currState == GameModel.State.USE)
+               {
+                   theDM.ShowBox("Where to apply this item? Choose an item on the screen.");
+                   Debug.Log("Where to apply this item? Choose an item on the screen.");
+
+               } else if (theGM.currState == GameModel.State.INSPECT)
+               {
+                   theDM.ShowBox(iItem.description);
+				   Debug.Log("Show description!! " + iItem.description);
+
+               }
+               // else
+               // {
+                   // for (int i = 0; i < iItems.Length; i++)
+                   // {
+                       // if (iItems[i].gameObject.activeSelf)
+                       // {
+                           // theDM.ShowBox(dialogueLines[i]);
+                       // }
+                   // }
+
+               // }
+            }
 
         }
         else
@@ -108,6 +121,7 @@ public class InventoryBox : MonoBehaviour, IPointerDownHandler
         
     }
 
+	
     //void OnMouseDown()
     //{
     //    if (gameObject.activeSelf)

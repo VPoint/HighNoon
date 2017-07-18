@@ -15,15 +15,22 @@ public class Clock : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		double min = Math.Floor(time.getTime()/60);
-		double sec = time.getTime() - min*60;
-		
-		if(sec < 10){
-			cText.text = min.ToString() + ":0" + sec.ToString();
+		if(time == null){
+			gameObject.SetActive(false);
 		} else {
-			cText.text = min.ToString() + ":" + sec.ToString();
+			gameObject.SetActive(true);
+			double min = Math.Floor(time.getTime()/60);
+			double sec = time.getTime() - min*60;
+			
+			if(!time.active){
+				cText.text = "";
+			} else if(sec < 10){
+				cText.text = min.ToString() + ":0" + sec.ToString();
+			} else {
+				cText.text = min.ToString() + ":" + sec.ToString();
+			}
+			
+			//Debug.Log(cText.text);
 		}
-		
-		//Debug.Log(cText.text);
 	}
 }

@@ -27,19 +27,6 @@ public class QuestItem : MonoBehaviour
 
     public bool canBePicked;
 
-    
-
-
-
-
-
-  
-
-    
-
-    
-
-
     // Use this for initialization
     void Start()
     {
@@ -49,8 +36,6 @@ public class QuestItem : MonoBehaviour
 
         theIM = FindObjectOfType<InventoryManager>();
         theGM = FindObjectOfType<GameModel>();
-
-
 
     }
 

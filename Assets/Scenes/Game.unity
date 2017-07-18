@@ -1056,8 +1056,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -8.5}
-  m_SizeDelta: {x: 129, y: 43}
+  m_AnchoredPosition: {x: -74.1, y: 6.1}
+  m_SizeDelta: {x: 76, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312905465
 MonoBehaviour:
@@ -1495,7 +1495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.7, y: -50.5}
+  m_AnchoredPosition: {x: -21.7, y: -51}
   m_SizeDelta: {x: 33, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612720317
@@ -1908,7 +1908,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 043817d31b5b69c4680b3f37e1cc3c12, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a67657dbe4c2c448960fb85ccd6533a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1932,6 +1932,7 @@ MonoBehaviour:
   iItemName: Explosives
   collectedItem: 
   theGM: {fileID: 1838931806}
+  description: Wow. These explosives could do some serious damage.
   questNumber: 8
   canBeCombined: 0
   itemToCombine: {fileID: 0}
@@ -1975,15 +1976,15 @@ RectTransform:
   m_GameObject: {fileID: 787356409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -40.02353}
-  m_LocalScale: {x: 1.05124, y: 1.18918, z: 1.00059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924096565}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.2200012, y: 2.2999992}
-  m_SizeDelta: {x: 50, y: 44}
+  m_AnchoredPosition: {x: 2.2200012, y: -2}
+  m_SizeDelta: {x: 44, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &828479591
 GameObject:
@@ -2091,6 +2092,7 @@ MonoBehaviour:
   iItemName: MetalBar
   collectedItem: 
   theGM: {fileID: 1838931806}
+  description: This is a metal bar. A bit rusty.
   questNumber: 0
   canBeCombined: 0
   itemToCombine: {fileID: 0}
@@ -2206,6 +2208,7 @@ MonoBehaviour:
   iItemName: Flint
   collectedItem: 
   theGM: {fileID: 1838931806}
+  description: These are some matches. But what would I set on fire?
   questNumber: 7
   canBeCombined: 1
   itemToCombine: {fileID: 937687837}
@@ -2272,7 +2275,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 715870d6e696cae45b9bae83135ea15f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9433795a6a7ddee448b4d3c532d96288, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2555,6 +2558,7 @@ MonoBehaviour:
   iItemName: Powder
   collectedItem: 
   theGM: {fileID: 1838931806}
+  description: Smells like gun powder.
   questNumber: 7
   canBeCombined: 1
   itemToCombine: {fileID: 896551960}
@@ -2675,7 +2679,6 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
 --- !u!4 &1026089701
 Transform:
   m_ObjectHideFlags: 0
@@ -3242,6 +3245,7 @@ MonoBehaviour:
   iItemName: Journal
   collectedItem: 
   theGM: {fileID: 1838931806}
+  description: This is a journal. I wonder what's inside.
   questNumber: 0
   canBeCombined: 0
   itemToCombine: {fileID: 0}
@@ -3427,6 +3431,7 @@ MonoBehaviour:
   iItemName: Spoon
   collectedItem: 
   theGM: {fileID: 1838931806}
+  description: This is a spoon. It's a little dirty.
   questNumber: 0
   canBeCombined: 0
   itemToCombine: {fileID: 0}
@@ -3805,7 +3810,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6:00
+  m_Text: 
 --- !u!222 &1371008613
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4292,7 +4297,7 @@ MonoBehaviour:
   - {fileID: 694488291}
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
-  startText: Success! You have acquired the Journal and Flint.
+  startText: Success! You have acquired the Journal and Matches.
   endText: 
   isItemQuest: 1
   targetItem: Powder

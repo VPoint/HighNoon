@@ -12,6 +12,7 @@ public class InventoryItem : MonoBehaviour
     public string collectedItem;
 
     public GameModel theGM;
+	public string description;
 
 
     //combination
@@ -41,7 +42,22 @@ public class InventoryItem : MonoBehaviour
     {
         if (theGM.currState == GameModel.State.COMBINE)
         {
-            Debug.Log("1 if loop");
+		if(theIM.iBoxes[iBoxNumber].isSelected && itemToCombine.theIM.iBoxes[itemToCombine.iBoxNumber].isSelected){
+				// two items need to be selected
+				AttemptCombine();
+		}
+		else
+            {
+                Debug.Log("else loop");
+                Debug.Log("Select at least one more inventory item");
+                theDM.ShowBox("These items cannot be combined together!");
+            }
+		}
+    }
+
+	void AttemptCombine()
+	{
+		 Debug.Log("1 if loop");
             if (canBeCombined && itemToCombine.canBeCombined && gameObject.activeSelf && itemToCombine.gameObject.activeSelf)
             {
                 int iboxNumber2 = itemToCombine.iBoxNumber;
@@ -77,7 +93,7 @@ public class InventoryItem : MonoBehaviour
                     // make the result item appreas
                     resultCombine.gameObject.SetActive(true);
                     SetItemsCombined(theQM.quests[questNumber]);
-                    //theGM.currState = GameModel.State.NONE;
+                    theGM.currState = GameModel.State.INSPECT;
                 }
 
             }
@@ -87,10 +103,8 @@ public class InventoryItem : MonoBehaviour
                 Debug.Log("These items cannot be combined together!");
                 theDM.ShowBox("These items cannot be combined together!");
             }
-        }
-
-    }
-
+	}
+	
     public void SetItemsCombined(QuestObject qo)
     {
         qo.combined = true;

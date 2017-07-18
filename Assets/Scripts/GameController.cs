@@ -16,6 +16,10 @@ public class GameController : MonoBehaviour {
 	private float SFXVol = 0.5f;
 	private int delay = 30;
 	
+	public AudioSource audioGame;
+	public AudioSource audioOther;
+	public AudioSource gameWin;
+	public AudioSource gameLose;
 	// Use this for initialization
 	void Start () {
 		if (!gcExists)
@@ -30,7 +34,7 @@ public class GameController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () {		
 		if(theIM == null && FindObjectOfType<InventoryManager>() != null){
 			theIM = FindObjectOfType<InventoryManager>();
 		}
@@ -49,12 +53,22 @@ public class GameController : MonoBehaviour {
 			}
 			
 			if(Application.loadedLevelName == "Game" ) {
-				BroadcastMessage("activateTimer");
+				if(!gameEasy) BroadcastMessage("activateTimer");
 				theGM.activateModel();
 				theIM.activateInventory();
 			}
 		} else {
 			BroadcastMessage("pauseTimer");
+		}
+		
+		if(Application.loadedLevelName == "Landing" || Application.loadedLevelName == "EndStateLose"
+			|| Application.loadedLevelName == "EndStateWin"){
+			//change to default background music
+			if(!audioOther.isPlaying && !gameLose.isPlaying && !gameWin.isPlaying) audioOther.Play();
+			if(audioGame.isPlaying) audioOther.Pause();
+		} else if(Application.loadedLevelName == "Game"){
+			if(audioOther.isPlaying) audioOther.Stop();
+			if(!audioGame.isPlaying) audioGame.Play();
 		}
 		
 		if(FindObjectOfType<QuestManager>() != null && theQM.finalQuestComplete){
@@ -63,6 +77,7 @@ public class GameController : MonoBehaviour {
 				delay--;
 			} else {
 				Debug.Log("Go to Win Screen");
+				gameWin.Play();
 				Application.LoadLevel("EndStateWin");
 				resetGame();
 			}
@@ -70,6 +85,7 @@ public class GameController : MonoBehaviour {
 	 
 		 if (timeElapsed)
 		 {
+			 gameLose.Play();
 			 Application.LoadLevel("EndStateLose");
 			 resetGame();
 		 }
@@ -120,6 +136,7 @@ public class GameController : MonoBehaviour {
 		 theGM.deactivateModel();
 		 theIM.resetManager();
 		 theQM.resetManager();
+		 audioGame.Stop();
 		 timeElapsed = false;
 		 gameWon = false;
 	 }

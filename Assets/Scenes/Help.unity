@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.25490198, a: 1}
+  m_Color: {r: 0.4473039, g: 0.625, b: 0.22518381, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.2551725, a: 1}
+  m_Color: {r: 0.44705883, g: 0.62352943, b: 0.22352941, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -715,12 +715,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slides:
   - {fileID: 21300000, guid: 42581f71d6a6a1e4ca409f1f9ee73552, type: 3}
+  - {fileID: 21300000, guid: 2471275c916d3cf44920b250aded26d1, type: 3}
+  - {fileID: 21300000, guid: b09279e97967bbb4fadcff4fc7d2eae2, type: 3}
   - {fileID: 21300000, guid: 71fa85c14a9b7ba40985f2c0c54b1c88, type: 3}
   - {fileID: 21300000, guid: 8e2896dce15425548a6d494c60f08c6d, type: 3}
-  - {fileID: 21300000, guid: 789d1aee22b06d6448b1fc7666a65039, type: 3}
   - {fileID: 21300000, guid: 4de19a8cf99e75b4ea44fd4d7938ca7a, type: 3}
   - {fileID: 21300000, guid: c32a07eab6cb8f84d9b9a3c44e88c628, type: 3}
-  - {fileID: 21300000, guid: b09279e97967bbb4fadcff4fc7d2eae2, type: 3}
   image: {fileID: 2084110277}
   nextButton: {fileID: 1143183857}
   prevButton: {fileID: 890945229}
