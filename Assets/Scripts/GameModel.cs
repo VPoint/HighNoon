@@ -31,7 +31,9 @@ public class GameModel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(FindObjectOfType<DialogueManager>() != null){
+			theDM = FindObjectOfType<DialogueManager>();
+		}
 	}
 	
 	public void SetState(int i){
