@@ -79,8 +79,7 @@ public class QuestItem : MonoBehaviour
 
             if (theGM.currState == GameModel.State.PICKUP)
             {
-                theDM.ShowBox("What item do you wanna pick up?");
-                Debug.Log("What item do you wanna pick up?");
+                Debug.Log("(QI)What item do you wanna pick up?");
 
                 if (canBePicked) { 
                     bool allRq = allRqCompleted();
@@ -106,8 +105,7 @@ public class QuestItem : MonoBehaviour
 
             if (theGM.currState == GameModel.State.USE)
             {
-                theDM.ShowBox("What item do you wanna use?");
-                Debug.Log("What item do you wanna use ? ");
+                Debug.Log("(QI)What item do you wanna use ? ");
 
                 if (theIM.iBoxes[iBoxNumber].isSelected && 
                     theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName == otherItemValue &&
@@ -152,8 +150,8 @@ public class QuestItem : MonoBehaviour
 
             if(theGM.currState == GameModel.State.COMBINE)
             {
-                theDM.ShowBox("Whats the first item in the inventory do you wanna combine?");
-                Debug.Log("Whats the first item in the inventory do you wanna combine?");
+                //theDM.ShowBox("Whats the first item in the inventory do you wanna combine?");
+                Debug.Log("(QI)In the INVENTORY, SELECT the items you want to combine.");
 
             }
 
@@ -182,8 +180,8 @@ public class QuestItem : MonoBehaviour
                 //}
                 //else
                 //{
-                theDM.ShowBox("What item do you wanna pick up?");
-                Debug.Log("What item do you wanna pick up?");
+               // theDM.ShowBox("What item do you wanna pick up?");
+                Debug.Log("(QI)What item do you wanna pick up?");
 
                 if (canBePicked)
                 {
@@ -211,8 +209,8 @@ public class QuestItem : MonoBehaviour
 
             if (theGM.currState == GameModel.State.USE)
             {
-                theDM.ShowBox("What item do you wanna use?");
-                Debug.Log("What item do you wanna use ? ");
+                //theDM.ShowBox("What item do you wanna use?");
+                Debug.Log("(QI)What item do you wanna use ? ");
 
                 if (theIM.iBoxes[iBoxNumber].isSelected &&
                     theIM.iBoxes[iBoxNumber].iItems[iSlotNumber].iItemName == otherItemValue &&

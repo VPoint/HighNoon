@@ -7,8 +7,10 @@ public class GameModel : MonoBehaviour {
 	public State currState = State.INSPECT;
 	
     private static bool gmExists;
-	
-	private bool active;
+
+    private bool active;
+
+    private DialogueManager theDM;
 
     // Use this for initialization
     void Start () {
@@ -23,6 +25,8 @@ public class GameModel : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+        theDM = FindObjectOfType<DialogueManager>();
     }
 	
 	// Update is called once per frame
@@ -34,19 +38,30 @@ public class GameModel : MonoBehaviour {
 		switch(i){
 			case 0:
 				currState = State.INSPECT;
-			break;
+                theDM.ShowBox("What item do you want to INSPECT?");
+                Debug.Log("What item do you wanna inspect?");
+
+                break;
 			case 1:
 				currState = State.USE;
-			break;
+                theDM.ShowBox("What item do you want to USE?");
+                Debug.Log("What item do you wanna use ? ");
+                break;
 			case 2:
 				currState = State.PICKUP;
-			break;
+                theDM.ShowBox("What item do you want to PICK UP?");
+                Debug.Log("What item do you wanna pick up?");
+                break;
 			case 3:
 				currState = State.COMBINE;
-			break;
+                theDM.ShowBox("Which TWO items in the INVENTORY do you want to COMBINE?");
+                Debug.Log("Which TWO items in the INVENTORY do you want to combine?");
+                break;
 			default:
 				currState = State.INSPECT;
-			break;
+                theDM.ShowBox("What item do you wanna inspect?");
+                Debug.Log("What item do you wanna inspect?");
+                break;
 		}
 		
 		Debug.Log(currState);
@@ -91,7 +106,9 @@ public class GameModel : MonoBehaviour {
 			gameObject.SetActive(!active);
 			currState = State.INSPECT;
 			active = false;
-		}
+            theDM.ShowBox("What item do you want to INSPECT?");
+            Debug.Log("What item do you wanna inspect?");
+        }
 	}
 	
 	public void activateModel(){

@@ -45,9 +45,16 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowBox(string dialogue)
     {
-        dialogActive = true;
-        dBox.SetActive(true);
-        dText.text = dialogue;
+        //dialogActive = true;
+        //dBox.SetActive(true);
+        //dText.text = dialogue;
+
+        dialogLines = new string[1];
+        dialogLines[0] = dialogue;
+
+        currentLine = 0;
+
+        ShowDialog();
 
     }
 
