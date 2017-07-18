@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 	public bool timeElapsed = false;
@@ -20,6 +21,7 @@ public class GameController : MonoBehaviour {
 	public AudioSource audioOther;
 	public AudioSource gameWin;
 	public AudioSource gameLose;
+	public float gameTime;
 	// Use this for initialization
 	void Start () {
 		if (!gcExists)
@@ -65,13 +67,13 @@ public class GameController : MonoBehaviour {
 			|| Application.loadedLevelName == "EndStateWin"){
 			//change to default background music
 			if(!audioOther.isPlaying && !gameLose.isPlaying && !gameWin.isPlaying) audioOther.Play();
-			if(audioGame.isPlaying) audioOther.Pause();
+			if(audioGame.isPlaying) audioGame.Pause();
 		} else if(Application.loadedLevelName == "Game"){
 			if(audioOther.isPlaying) audioOther.Stop();
 			if(!audioGame.isPlaying) audioGame.Play();
 		}
 		
-		if(FindObjectOfType<QuestManager>() != null && theQM.finalQuestComplete){
+		if((FindObjectOfType<QuestManager>() != null && theQM.finalQuestComplete)|| gameWon){
 			// if last quest completed, player has won
 			if(delay > 0){
 				delay--;
@@ -79,6 +81,8 @@ public class GameController : MonoBehaviour {
 				Debug.Log("Go to Win Screen");
 				gameWin.Play();
 				Application.LoadLevel("EndStateWin");
+				Timer time = FindObjectOfType<Timer>();
+				gameTime= (360 - time.getTime());
 				resetGame();
 			}
 		}
@@ -131,7 +135,7 @@ public class GameController : MonoBehaviour {
 		 gameWon = true;
 	 }
 	 
-	 void resetGame(){
+	 public void resetGame(){
 		 BroadcastMessage("resetTimer");
 		 theGM.deactivateModel();
 		 theIM.resetManager();
