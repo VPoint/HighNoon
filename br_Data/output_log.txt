@@ -22,3 +22,653 @@ desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.782611 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.054469 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.339445 ms (FindLiveObjects: 0.032094 ms CreateObjectMapping: 0.023032 ms MarkObjects: 0.249958 ms  DeleteObjects: 0.033227 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.536756 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 540.
+Total: 0.301687 ms (FindLiveObjects: 0.032849 ms CreateObjectMapping: 0.015858 ms MarkObjects: 0.235988 ms  DeleteObjects: 0.016236 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.235824 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 551.
+Total: 1.128968 ms (FindLiveObjects: 0.120448 ms CreateObjectMapping: 0.097038 ms MarkObjects: 0.828036 ms  DeleteObjects: 0.081557 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at QuestObject.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Mouse down method activated
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Item collectedSpoon
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The GM curr state INSPECT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+What item do you wanna inspect?
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+What item do you wanna inspect?
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.331138 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 342.
+Total: 0.262796 ms (FindLiveObjects: 0.024920 ms CreateObjectMapping: 0.018879 ms MarkObjects: 0.183127 ms  DeleteObjects: 0.035115 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.283941 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 367.
+Total: 0.283186 ms (FindLiveObjects: 0.028318 ms CreateObjectMapping: 0.030206 ms MarkObjects: 0.204649 ms  DeleteObjects: 0.019256 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.351528 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 346.
+Total: 0.246183 ms (FindLiveObjects: 0.024920 ms CreateObjectMapping: 0.020389 ms MarkObjects: 0.180483 ms  DeleteObjects: 0.020011 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.386265 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 569.
+Total: 0.524460 ms (FindLiveObjects: 0.070607 ms CreateObjectMapping: 0.032094 ms MarkObjects: 0.396082 ms  DeleteObjects: 0.025297 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.410431 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 551.
+Total: 0.314147 ms (FindLiveObjects: 0.033227 ms CreateObjectMapping: 0.014725 ms MarkObjects: 0.239386 ms  DeleteObjects: 0.025675 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at QuestObject.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.623387 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 0.427422 ms (FindLiveObjects: 0.046820 ms CreateObjectMapping: 0.026808 ms MarkObjects: 0.331894 ms  DeleteObjects: 0.021144 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.943953 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 578.
+Total: 0.849558 ms (FindLiveObjects: 0.100059 ms CreateObjectMapping: 0.088731 ms MarkObjects: 0.595823 ms  DeleteObjects: 0.063811 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at QuestObject.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.381357 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 0.742702 ms (FindLiveObjects: 0.063056 ms CreateObjectMapping: 0.043044 ms MarkObjects: 0.590159 ms  DeleteObjects: 0.043799 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.972272 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 540.
+Total: 0.696637 ms (FindLiveObjects: 0.090619 ms CreateObjectMapping: 0.059280 ms MarkObjects: 0.488968 ms  DeleteObjects: 0.056259 ms)
+
+raycast running start
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Mouse down method activated
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Item collectedPlanks
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The GM curr state INSPECT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+What item do you wanna inspect?
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Mouse down method activated
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Item collectedPlanks
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The GM curr state INSPECT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+What item do you wanna inspect?
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.715516 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 559.
+Total: 0.416472 ms (FindLiveObjects: 0.052861 ms CreateObjectMapping: 0.026808 ms MarkObjects: 0.320566 ms  DeleteObjects: 0.015480 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+You Entered 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Left 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Middle 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Right 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in the correct format
+  at System.Int32.Parse (System.String s) [0x00000] in <filename unknown>:0 
+  at Puzzle.GetInput (System.String guess) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCall`1[System.String].Invoke (System.Object[] args) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCallList.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEventBase.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEvent`1[T0].Invoke (.T0 arg0) [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.SendOnSubmit () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.DeactivateInputField () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.OnDeselect (UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (IDeselectHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[IDeselectHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) [0x00000] in <filename unknown>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.EventSystem:SetSelectedGameObject(GameObject, BaseEventData)
+UnityEngine.EventSystems.PointerInputModule:DeselectIfSelectionChanged(GameObject, BaseEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+You Entered 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Left 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Middle 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Right 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in the correct format
+  at System.Int32.Parse (System.String s) [0x00000] in <filename unknown>:0 
+  at Puzzle.GetInput (System.String guess) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCall`1[System.String].Invoke (System.Object[] args) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCallList.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEventBase.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEvent`1[T0].Invoke (.T0 arg0) [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.SendOnSubmit () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.DeactivateInputField () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.OnDeselect (UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (IDeselectHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[IDeselectHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) [0x00000] in <filename unknown>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.EventSystem:SetSelectedGameObject(GameObject, BaseEventData)
+UnityEngine.EventSystems.PointerInputModule:DeselectIfSelectionChanged(GameObject, BaseEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+You Entered 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Left 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Middle 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Right 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+You Entered 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Left 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Middle 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Input Right 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.761959 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 543.
+Total: 0.319433 ms (FindLiveObjects: 0.035870 ms CreateObjectMapping: 0.015858 ms MarkObjects: 0.252979 ms  DeleteObjects: 0.014348 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at QuestObject.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.433085 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.784991 ms (FindLiveObjects: 0.099681 ms CreateObjectMapping: 0.046064 ms MarkObjects: 0.591292 ms  DeleteObjects: 0.047197 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.382490 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 543.
+Total: 0.313770 ms (FindLiveObjects: 0.032849 ms CreateObjectMapping: 0.014725 ms MarkObjects: 0.240896 ms  DeleteObjects: 0.024920 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.382112 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.413074 ms (FindLiveObjects: 0.050973 ms CreateObjectMapping: 0.034359 ms MarkObjects: 0.305085 ms  DeleteObjects: 0.021899 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.713251 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 543.
+Total: 0.382867 ms (FindLiveObjects: 0.059657 ms CreateObjectMapping: 0.018123 ms MarkObjects: 0.276012 ms  DeleteObjects: 0.028696 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.390419 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.383245 ms (FindLiveObjects: 0.032849 ms CreateObjectMapping: 0.021522 ms MarkObjects: 0.303953 ms  DeleteObjects: 0.024165 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.504071 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 543.
+Total: 0.363988 ms (FindLiveObjects: 0.049463 ms CreateObjectMapping: 0.024920 ms MarkObjects: 0.262041 ms  DeleteObjects: 0.026430 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.432330 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.581853 ms (FindLiveObjects: 0.043421 ms CreateObjectMapping: 0.037002 ms MarkObjects: 0.477640 ms  DeleteObjects: 0.023032 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.523327 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 543.
+Total: 0.329251 ms (FindLiveObjects: 0.041156 ms CreateObjectMapping: 0.023787 ms MarkObjects: 0.238631 ms  DeleteObjects: 0.024920 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.590159 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.449321 ms (FindLiveObjects: 0.041156 ms CreateObjectMapping: 0.024920 ms MarkObjects: 0.358702 ms  DeleteObjects: 0.024165 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.586006 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 514.
+Total: 0.384377 ms (FindLiveObjects: 0.048330 ms CreateObjectMapping: 0.024165 ms MarkObjects: 0.274879 ms  DeleteObjects: 0.036625 ms)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
+  at DialogueManager.ShowDialog () [0x00000] in <filename unknown>:0 
+  at DialogueManager.ShowBox (System.String dialogue) [0x00000] in <filename unknown>:0 
+  at GameModel.deactivateModel () [0x00000] in <filename unknown>:0 
+  at GameController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour (Game Object 'prevSlide') is missing!
+ 
+(Filename:  Line: 1743)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.645286 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 502.
+Total: 0.964720 ms (FindLiveObjects: 0.076271 ms CreateObjectMapping: 0.060413 ms MarkObjects: 0.673982 ms  DeleteObjects: 0.153298 ms)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+raycast detect left click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RaycastSelection.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4d18 -> priority: 1 
+  Thread -> id: 4d74 -> priority: 1 

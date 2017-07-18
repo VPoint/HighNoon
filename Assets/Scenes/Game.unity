@@ -3866,7 +3866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1439569914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3883,7 +3883,7 @@ MonoBehaviour:
   - {fileID: 197563032}
   theQM: {fileID: 828479592}
   theGM: {fileID: 0}
-  startText: I wonder if there's something I can use here...
+  startText: 
   endText: 
   isItemQuest: 1
   targetItem: Spoon

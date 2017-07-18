@@ -522,7 +522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &619076234
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1227,8 +1227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   dialogueLines:
-  - Oof...it looked easy to take out, but I guess I'll need to use something to pry
-    it out
+  - 'Oof...it looked easy to take out, but I guess I''ll need '
+  - to use something to pry it out?
   - Maybe I can find something I can use somewhere else?
 --- !u!1 &1596742362
 GameObject:
