@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Action : Button
+public class Action : MonoBehaviour, IPointerDownHandler
 {
 
     private GameModel theGM;
@@ -12,6 +13,7 @@ public class Action : Button
 	public Image buttonImage;
 	public Sprite selected;
 	public Sprite deselected;
+	private bool active;
 
     // Use this for initialization
     void Start()
@@ -27,12 +29,14 @@ public class Action : Button
 		if(theGM.currState == buttonState){
 			//Debug.Log("Show pressed");
 			buttonImage.sprite = selected;
+			active = true;
 		} else {
 			buttonImage.sprite = deselected;
+			active = false;
 		}
     }
 
-    public void changeState()
+     public void OnPointerDown (PointerEventData eventData)
     {
         //Debug.Log("Action Selected");
 		if(theGM.currState != buttonState){
