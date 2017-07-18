@@ -346,6 +346,7 @@ SpriteRenderer:
   m_Size: {x: 320, y: 54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!1 &806104059
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +420,7 @@ GameObject:
   - component: {fileID: 927903733}
   - component: {fileID: 927903734}
   - component: {fileID: 927903735}
+  - component: {fileID: 927903736}
   m_Layer: 0
   m_Name: crack_zoom
   m_TagString: Untagged
@@ -479,6 +481,7 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!114 &927903734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,6 +526,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 132.8454, y: 124.760544}
   m_EdgeRadius: 0
+--- !u!114 &927903736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927903731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df6efccbeeaf2b469af083fd019ffde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - Maybe I can usee something to destroy the wall...
+  canBeCombined: 0
+  canBePicked: 0
+  canBeUsed: 0
+  itemName: 
 --- !u!1 &978544572
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +897,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!114 &1495664437
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -85,6 +85,7 @@ public class InventoryItem : MonoBehaviour
             {
                 Debug.Log("else loop");
                 Debug.Log("These items cannot be combined together!");
+                theDM.ShowBox("These items cannot be combined together!");
             }
         }
 

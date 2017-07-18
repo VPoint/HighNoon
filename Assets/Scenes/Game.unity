@@ -634,6 +634,8 @@ MonoBehaviour:
   iItem: {fileID: 937687837}
   currentItem: 0
   isSelected: 0
+  dialogueLines:
+  - Powder.
 --- !u!114 &233256522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,6 +2419,10 @@ MonoBehaviour:
   iItem: {fileID: 0}
   currentItem: 0
   isSelected: 0
+  dialogueLines:
+  - Metal Bar.
+  - Flint.
+  - Explosives.
 --- !u!114 &924096563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2620,6 +2626,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1026089701}
   - component: {fileID: 1026089700}
+  - component: {fileID: 1026089703}
+  - component: {fileID: 1026089704}
   m_Layer: 0
   m_Name: gameScreen
   m_TagString: Untagged
@@ -2667,6 +2675,7 @@ SpriteRenderer:
   m_Size: {x: 320, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!4 &1026089701
 Transform:
   m_ObjectHideFlags: 0
@@ -2680,6 +2689,49 @@ Transform:
   m_Father: {fileID: 914457311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1026089703
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026089699}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.6685638, y: 65.017296}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 320, y: 180}
+    newSize: {x: 320, y: 180}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 314.66287, y: 49.96541}
+  m_EdgeRadius: 0
+--- !u!114 &1026089704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026089699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df6efccbeeaf2b469af083fd019ffde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - The door is locked.
+  canBeCombined: 0
+  canBePicked: 0
+  canBeUsed: 0
+  itemName: 
 --- !u!1 &1106155026
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,7 +4292,7 @@ MonoBehaviour:
   - {fileID: 694488291}
   theQM: {fileID: 828479592}
   theGM: {fileID: 1838931806}
-  startText: You succesfully opened the safe and have acquired the Journal and Flint.
+  startText: Success! You have acquired the Journal and Flint.
   endText: 
   isItemQuest: 1
   targetItem: Powder
@@ -4800,6 +4852,9 @@ MonoBehaviour:
   iItem: {fileID: 0}
   currentItem: 0
   isSelected: 0
+  dialogueLines:
+  - This is a Spoon.
+  - This is a Journal.
 --- !u!224 &2138832008
 RectTransform:
   m_ObjectHideFlags: 0

@@ -98,8 +98,8 @@ public class QuestItem : MonoBehaviour
                 }
                 else
                 {
-                    theDM.ShowBox("The item you selected is not a pickable item!");
-                    Debug.Log("The item you selected is not a pickable item!");
+                    theDM.ShowBox("This cannot be picked up.");
+                    Debug.Log("This cannot be picked up.");
                 }
             }
 

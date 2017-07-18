@@ -177,6 +177,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!1 &70307842
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +739,8 @@ GameObject:
   m_Component:
   - component: {fileID: 566318573}
   - component: {fileID: 566318574}
+  - component: {fileID: 566318576}
+  - component: {fileID: 566318575}
   m_Layer: 0
   m_Name: sink_zoom
   m_TagString: Untagged
@@ -798,6 +801,47 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 1.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+--- !u!61 &566318575
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 566318572}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 71.323814, y: 4.8520966}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 320, y: 168}
+    newSize: {x: 3.2, y: 1.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 177.35237, y: 158.2958}
+  m_EdgeRadius: 0
+--- !u!114 &566318576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 566318572}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0135d0c33f6c1394aac28e845712a395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeCombined: 0
+  canBePicked: 0
+  canBeUsed: 0
+  itemName: 
 --- !u!1 &582030799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1273,7 @@ SpriteRenderer:
   m_Size: {x: 53, y: 38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
 --- !u!114 &859023644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1288,10 @@ MonoBehaviour:
   dialogue: 
   dialogueLines:
   - This is a spoon!
+  canBeCombined: 0
+  canBePicked: 0
+  canBeUsed: 0
+  itemName: 
 --- !u!1 &859894169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,6 +1831,10 @@ MonoBehaviour:
   dialogue: 
   dialogueLines:
   - I wonder if there's something I can use here...
+  canBeCombined: 0
+  canBePicked: 0
+  canBeUsed: 0
+  itemName: 
 --- !u!61 &2003858491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1947,6 +2000,10 @@ MonoBehaviour:
   dialogue: 
   dialogueLines:
   - I wonder if there's something I can use here...
+  canBeCombined: 0
+  canBePicked: 0
+  canBeUsed: 0
+  itemName: 
 --- !u!61 &2055616863
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -43,6 +43,8 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+
+
     public void ShowBox(string dialogue)
     {
         //dialogActive = true;
